@@ -28,7 +28,7 @@ Each repository includes:
 Predicts product sales using TV, Radio, and Newspaper ad spending.  
 Includes EDA, correlation analysis, multicollinearity checks, and regression diagnostics.  
 **Models:** Linear Regression  
-🔗 Repository: `Advertising-Sales-Prediction`
+🔗 Repository: `[Advertising-Sales-Prediction](https://github.com/ruthuraraj-ml/Advertising-Sales-Prediction-using-Linear-Regression)`
 
 ---
 
@@ -37,7 +37,7 @@ Includes EDA, correlation analysis, multicollinearity checks, and regression dia
 Analyses hourly rental counts using weather, season, and time-based features.  
 Highlights temporal patterns, weather effects, and demand forecasting.  
 **Models:** Linear Regression  
-🔗 Repository: `Bike-Demand-Prediction`
+🔗 Repository: `[Bike-Demand-Prediction](https://github.com/ruthuraraj-ml/Bike-Sharing-Demand-Prediction)`
 
 ---
 
@@ -46,7 +46,7 @@ Highlights temporal patterns, weather effects, and demand forecasting.
 Binary diabetes prediction using clinical features from the Pima Indians Dataset.  
 Includes preprocessing, correlation, model metrics, ROC–AUC, and interpretability.  
 **Models:** Logistic Regression  
-🔗 Repository: `Diabetes-Prediction`
+🔗 Repository: `[Diabetes-Prediction](https://github.com/ruthuraraj-ml/Diabetes-Prediction-using-Logistic-Regression)`
 
 ---
 
@@ -55,7 +55,7 @@ Includes preprocessing, correlation, model metrics, ROC–AUC, and interpretabil
 Predicts survival probabilities using demographics, ticket class, family size, fare, etc.  
 Includes categorical encoding, scaling, and model evaluation metrics.  
 **Models:** Logistic Regression  
-🔗 Repository: `Titanic-Survival-Prediction`
+🔗 Repository: `[Titanic-Survival-Prediction](https://github.com/ruthuraraj-ml/Titanic-Survival-Prediction-using-Logistic-Regression)`
 
 ---
 
@@ -64,7 +64,7 @@ Includes categorical encoding, scaling, and model evaluation metrics.
 Predicts wine quality (3–8) from physicochemical attributes using ensemble learning.  
 Includes EDA, class imbalance analysis, feature importance, cross-validation.  
 **Models:** Random Forest  
-🔗 Repository: `Wine-Quality-Prediction`
+🔗 Repository: `[Wine-Quality-Prediction](https://github.com/ruthuraraj-ml/Wine-Quality-Prediction-using-Random-Forest-Classifier)`
 
 ---
 
@@ -74,7 +74,7 @@ Detects fraudulent transactions in extreme class imbalance (~0.15%).
 Compares Logistic Regression, Random Forest, and XGBoost.  
 Includes PR–AUC, ROC–AUC, and confusion matrices.  
 **Models:** LR, RF, XGBoost  
-🔗 Repository: `Fraud-Detection-ML`
+🔗 Repository: `[Fraud-Detection-ML](https://github.com/ruthuraraj-ml/Online-Payment-Fraud-Detection-using-Machine-Learning)`
 
 ---
 
@@ -83,7 +83,7 @@ Includes PR–AUC, ROC–AUC, and confusion matrices.
 Uses InceptionV3 encoder + LSTM decoder to generate natural language captions for images.  
 Includes top-k sampling, temperature scaling, BLEU evaluation, and HuggingFace dataset.  
 **Models:** CNN + LSTM (Encoder–Decoder)  
-🔗 Repository: `Image-Caption-Generator`
+🔗 Repository: `[Image-Caption-Generator](https://github.com/ruthuraraj-ml/Image-Caption-Generator-CNN-LSTM-)`
 
 ---
 
@@ -93,7 +93,7 @@ Reconstructs ×4 high-resolution images from LR inputs using SRGAN with VGG perc
 Includes DIV2K dataset, warm-up and adversarial training, PSNR/SSIM/LPIPS metrics,  
 and 4-panel visual comparisons.  
 **Models:** SRGAN (Generator + Discriminator)  
-🔗 Repository: `SRGAN-SuperResolution`
+🔗 Repository: `[SRGAN-SuperResolution](https://github.com/ruthuraraj-ml/Image-Super-Resolution-using-SRGAN-GAN-based-Perceptual-Super-Resolution)`
 
 ---
 
