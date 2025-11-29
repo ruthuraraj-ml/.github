@@ -133,7 +133,8 @@ This organization represents his journey from classical ML → modern Deep Learn
 
 # ⭐ Acknowledgements
 
-- AICTE QIP Programme — IIIT Allahabad  
+- AICTE QIP Programme on 'AI to Generative AI' — IIIT Allahabad
+- SNS College of Technology
 - Kaggle, UCI, HuggingFace Datasets  
 - PyTorch & TensorFlow communities  
 - SRGAN / ESRGAN research papers  
