@@ -1,81 +1,143 @@
-## Hi there 👋
-# 🚀 Ruthuraraj ML — Applied Machine Learning & GenAI Projects
+# 🚀 ruthuraraj-ml — Machine Learning & Generative AI Projects
 
-Welcome to **Ruthuraraj ML**, an organization dedicated to showcasing applied **Machine Learning**, **Deep Learning**, **Generative AI**, and **Data Science** projects.  
-This portfolio reflects the journey of **R. Ruthuraraj**, Assistant Professor (Mechanical Engineering), exploring the intersection of **engineering, AI, and research-driven problem solving**.
+Welcome to **ruthuraraj-ml**, an organization showcasing the end-to-end Machine Learning,  
+Deep Learning, and Generative AI projects developed by **R. Ruthuraraj (AP/Mechanical Engg.)**  
+as part of continued learning, QIP coursework, teaching, and applied AI research.
 
----
-
-## 📌 Vision
-To build high-quality, reproducible ML and GenAI projects that serve as:
-- Teaching material for students  
-- Research foundations for new ideas  
-- Practical demonstrations of core ML concepts  
-- Open-source resources for the engineering and ML community  
+This portfolio includes classical ML, DNNs, GANs, multimodal AI, and domain-specific  
+engineering applications — each packaged with reports, notebooks, reproducible code, and documentation.
 
 ---
 
-## 📂 Project Portfolio
+# 📚 Project Index
 
-Below is a growing collection of repositories, each representing a hands-on ML/GenAI project.
-
-### 🔬 **Deep Learning & GenAI**
-- **Image Captioning (CNN + Transformer)** — End-to-end neural caption generator with attention  
-- **SRGAN / SRResNet Super-Resolution** — High-resolution image reconstruction using GANs  
-- **Variational Autoencoders (VAE) for Tabular Data** — Lightweight generative model for structured data  
-- **Denoising Autoencoders & Diffusion Experiments** — Exploratory generative modeling
-
-### 🛠️ **Engineering + ML Applications**
-- **Nano-Additive Bio-Lubricant Analysis** — ML models to understand wear, friction, and machining behavior  
-- **Surface Roughness Prediction** — Regression and feature analysis for machining parameters  
-- **AI-Assisted Lubricant Optimization** *(work in progress)*
-
-### 📘 **QIP / Coursework**
-- **AI to GenAI (AICTE–QIP)** — Course notebooks, exercises, and implementation projects  
-- **NPTEL Programming & DS Using Python** — Selected solved problems and teaching examples  
-
-### 🧩 **Algorithmic Problem Solving**
-- **LeetCode Journey** — Recursion, backtracking, DP, graph algorithms, and more  
-- Structured progression from fundamentals → interviews → ML foundations  
+Below is the complete list of projects currently published in this organization.  
+Each repository includes:  
+✔ Report  
+✔ Colab notebook  
+✔ README  
+✔ Requirements  
+✔ Folder structure  
+✔ License  
+✔ Reproducible workflow
 
 ---
 
-## 🧱 Technology Stack
-
-**Languages:** Python, SQL  
-**Libraries:** PyTorch, TensorFlow/Keras, Transformers, OpenCV, scikit-learn, NumPy, Matplotlib  
-**Tools:** Google Colab, Weights & Biases (optional), GitHub Actions, Git LFS  
-**Domains:** Generative AI, Vision, Optimization, Regression, Classification, DSA
-
----
-
-## 🧭 Roadmap (2025–2026)
-
-- Build a **RAG-based LMS system** for auto-generating notes & question banks  
-- Publish open datasets & trained checkpoints for key projects  
-- Prepare an academic **Research Portfolio** integrating Mechanical Engineering + AI  
-- Expand GenAI section with **Diffusion models**, **VAEs**, and **lightweight LLM fine-tuning**
+## 🔍 **1. Advertising Sales Prediction — Linear Regression**
+**Type:** Regression  
+Predicts product sales using TV, Radio, and Newspaper ad spending.  
+Includes EDA, correlation analysis, multicollinearity checks, and regression diagnostics.  
+**Models:** Linear Regression  
+🔗 Repository: `Advertising-Sales-Prediction`
 
 ---
 
-## 🤝 Collaboration & Contributions
-
-This organization welcomes:
-- Students looking for ML project references  
-- Collaborators interested in applied engineering + AI research  
-- Educators seeking open-source ML teaching materials  
-
-Feel free to explore the repositories and raise issues or suggestions.
+## 🚲 **2. Bike Sharing Demand Prediction — Linear Regression**
+**Type:** Time-Pattern Regression  
+Analyses hourly rental counts using weather, season, and time-based features.  
+Highlights temporal patterns, weather effects, and demand forecasting.  
+**Models:** Linear Regression  
+🔗 Repository: `Bike-Demand-Prediction`
 
 ---
 
-## 📬 Contact
+## 🩺 **3. Diabetes Prediction — Logistic Regression**
+**Type:** Medical Classification  
+Binary diabetes prediction using clinical features from the Pima Indians Dataset.  
+Includes preprocessing, correlation, model metrics, ROC–AUC, and interpretability.  
+**Models:** Logistic Regression  
+🔗 Repository: `Diabetes-Prediction`
+
+---
+
+## 🚢 **4. Titanic Survival Prediction — Logistic Regression**
+**Type:** Binary Classification  
+Predicts survival probabilities using demographics, ticket class, family size, fare, etc.  
+Includes categorical encoding, scaling, and model evaluation metrics.  
+**Models:** Logistic Regression  
+🔗 Repository: `Titanic-Survival-Prediction`
+
+---
+
+## 🍷 **5. Wine Quality Prediction — Random Forest Classifier**
+**Type:** Multiclass Classification  
+Predicts wine quality (3–8) from physicochemical attributes using ensemble learning.  
+Includes EDA, class imbalance analysis, feature importance, cross-validation.  
+**Models:** Random Forest  
+🔗 Repository: `Wine-Quality-Prediction`
+
+---
+
+## 💳 **6. Online Payment Fraud Detection — ML (LR, RF, XGBoost)**
+**Type:** Imbalanced Classification  
+Detects fraudulent transactions in extreme class imbalance (~0.15%).  
+Compares Logistic Regression, Random Forest, and XGBoost.  
+Includes PR–AUC, ROC–AUC, and confusion matrices.  
+**Models:** LR, RF, XGBoost  
+🔗 Repository: `Fraud-Detection-ML`
+
+---
+
+## 🖼️ **7. Image Caption Generator — CNN–LSTM (Generative AI)**
+**Type:** Multimodal AI (Vision + Language)  
+Uses InceptionV3 encoder + LSTM decoder to generate natural language captions for images.  
+Includes top-k sampling, temperature scaling, BLEU evaluation, and HuggingFace dataset.  
+**Models:** CNN + LSTM (Encoder–Decoder)  
+🔗 Repository: `Image-Caption-Generator`
+
+---
+
+## 🔍🖼️ **8. SRGAN — Image Super-Resolution using GANs**
+**Type:** Generative Adversarial Networks (Perceptual Super-Resolution)  
+Reconstructs ×4 high-resolution images from LR inputs using SRGAN with VGG perceptual loss.  
+Includes DIV2K dataset, warm-up and adversarial training, PSNR/SSIM/LPIPS metrics,  
+and 4-panel visual comparisons.  
+**Models:** SRGAN (Generator + Discriminator)  
+🔗 Repository: `SRGAN-SuperResolution`
+
+---
+
+# 📌 Upcoming Projects
+
+Projects planned for future upload:
+
+- 📘 **QIP Course Projects (AI to GenAI)**  
+- 📷 **ESRGAN / Real-ESRGAN extension**  
+- 🤖 **VAE for Tabular Data (Generative Modeling for ML datasets)**  
+- 📄 **RAG-based LMS System (Auto notes + question generation)**  
+- 📈 **Surface Roughness Prediction (Mechanical Engineering + ML)**  
+- 🛠️ **Nano-additives ML Modelling (Bio-lubricants)**  
+
+---
+
+# 🧱 Technology Stack Overview
+
+- **Languages:** Python  
+- **ML Libraries:** scikit-learn, NumPy, Pandas  
+- **DL Libraries:** PyTorch, TensorFlow/Keras  
+- **GenAI:** CNN–LSTM, SRGAN, VGG Perceptual Loss  
+- **Tools:** Google Colab, HuggingFace, Jupyter Notebooks  
+- **Domains:** Regression, Classification, Ensemble Learning, GANs, Multimodal AI  
+
+---
+
+# 👨‍🏫 About
+
 **R. Ruthuraraj**  
-Assistant Professor, Mechanical Engineering  
-SNS Coleege of Technology
-Email: *ruthuraraj@gmail.com*  
-GitHub: [github.com/ruthuraraj](https://github.com/ruthuraraj)
+Assistant Professor (Mechanical Engineering)  
+Specializing in Machine Learning, Deep Learning, Generative AI, and AI-enabled Engineering Applications.
+
+This organization represents his journey from classical ML → modern Deep Learning → Generative AI.
 
 ---
 
-⭐ *If you find the projects useful, consider starring the repositories!*  
+# ⭐ Acknowledgements
+
+- AICTE QIP Programme — IIIT Allahabad  
+- Kaggle, UCI, HuggingFace Datasets  
+- PyTorch & TensorFlow communities  
+- SRGAN / ESRGAN research papers  
+
+---
+
+⭐ *If you find the projects useful, please star the repositories!*  
