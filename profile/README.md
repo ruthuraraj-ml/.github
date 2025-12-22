@@ -78,12 +78,41 @@ Includes PR–AUC, ROC–AUC, and confusion matrices.
 
 ---
 
-## 🖼️ **7. Image Caption Generator — CNN–LSTM (Generative AI)**
-**Type:** Multimodal AI (Vision + Language)  
-Uses InceptionV3 encoder + LSTM decoder to generate natural language captions for images.  
-Includes top-k sampling, temperature scaling, BLEU evaluation, and HuggingFace dataset.  
-**Models:** CNN + LSTM (Encoder–Decoder)  
-🔗 Repository: `[Image-Caption-Generator](https://github.com/ruthuraraj-ml/Image-Caption-Generator-CNN-LSTM-)`
+## 🖼️ **7. Image Caption Generator — Vision–Language Models (Generative AI)**
+
+**Type:** Multimodal AI (Vision + Language)
+
+This project explores **automatic image caption generation** using both **classical encoder–decoder architectures** and **modern transformer-based vision–language models**.
+
+The work begins with a **CNN–LSTM baseline** (InceptionV3 + LSTM) to validate cross-modal learning, followed by experiments with a **Transformer decoder** and **pretrained vision–language transformers** fine-tuned on a small real-world dataset.
+
+Rather than focusing only on accuracy, the project emphasizes:
+- model validation via overfitting tests,
+- the effect of dataset quality on caption fluency,
+- and practical challenges of fine-tuning multimodal models on limited data and hardware.
+
+**Key Components**
+- CNN encoder (InceptionV3, ImageNet pretrained)
+- LSTM / Transformer-based caption decoder
+- Pretrained vision–language transformer fine-tuning
+- Caption cleaning and preprocessing pipeline
+- Beam search, repetition penalty, and decoding strategies
+- Qualitative and empirical analysis of fine-tuning behavior
+
+**Datasets**
+- Open Images Captions (Micro) — Hugging Face
+
+**Models Explored**
+- CNN + LSTM (Encoder–Decoder)
+- CNN + Transformer Decoder (from scratch)
+- Pretrained Vision–Language Transformer (fine-tuned)
+
+**Outcome**
+- Demonstrates correct multimodal learning via controlled overfitting
+- Shows why pretrained captioning models outperform naive fine-tuning on small datasets
+- Serves as a **learning-focused Generative AI case study**, not just a benchmark-chasing implementation
+  
+🔗 Repository: `[Image-Caption-Generator](https://github.com/ruthuraraj-ml/Image-Caption-Generation-using-Vision-Language-Models))`
 
 ---
 
