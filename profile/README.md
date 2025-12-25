@@ -116,21 +116,26 @@ Rather than focusing only on accuracy, the project emphasizes:
 
 ---
 
-## 🔍🖼️ **8. SRGAN — Image Super-Resolution using GANs**
+## 🔍🖼️ **8. Image Super-Resolution — SRGAN & ESRGAN**
+
 **Type:** Generative Adversarial Networks (Perceptual Super-Resolution)  
-Reconstructs ×4 high-resolution images from LR inputs using SRGAN with VGG perceptual loss.  
-Includes DIV2K dataset, warm-up and adversarial training, PSNR/SSIM/LPIPS metrics,  
-and 4-panel visual comparisons.  
-**Models:** SRGAN (Generator + Discriminator)  
-🔗 Repository: `[SRGAN-SuperResolution](https://github.com/ruthuraraj-ml/Image-Super-Resolution-using-SRGAN-GAN-based-Perceptual-Super-Resolution)`
+
+Reconstructs ×4 high-resolution images from low-resolution inputs using **SRGAN** and its improved variant **ESRGAN (RRDB-based)**.
+
+Includes DIV2K dataset, patch-based training, warm-up and stability-oriented adversarial fine-tuning, and full-image qualitative evaluation.
+
+Emphasizes perceptual trade-offs under constrained training, with side-by-side and zoomed visual comparisons.
+
+**Models:** SRGAN, ESRGAN (Generator + Discriminator) 
+
+🔗 Repository: `[SRGAN, ESRGAN-SuperResolution](https://github.com/ruthuraraj-ml/Image-Super-Resolution-using-SRGAN-and-ESRGAN)`
 
 ---
 
 # 📌 Upcoming Projects
 
 Projects planned for future upload:
-
-- 📘 **QIP Course Projects (AI to GenAI)**  
+ 
 - 📷 **ESRGAN / Real-ESRGAN extension**  
 - 🤖 **VAE for Tabular Data (Generative Modeling for ML datasets)**  
 - 📄 **RAG-based LMS System (Auto notes + question generation)**  
