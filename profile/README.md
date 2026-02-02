@@ -23,6 +23,29 @@ Each repository includes:
 
 ---
 
+## 🧠 Foundations & Core Concepts
+
+### 🔹 XOR Problem — Why Deep Learning Exists
+**Type:** Learning Theory / Neural Network Foundations  
+
+A minimal, concept-driven demonstration explaining **why linear models and logistic regression fail**, and **why neural networks with hidden layers are necessary**.
+
+This project progresses through:
+- OR and AND problems (linear separability)
+- XOR problem (linear inseparability)
+- Logistic regression failure on XOR
+- Successful solution using a neural network with one hidden layer
+
+The focus is on **decision boundaries, representation learning, and architectural necessity**, making this a conceptual bridge between classical machine learning and deep learning.
+
+**Models:** Logistic Regression, Multi-Layer Perceptron (MLP)
+
+🔗 Repository: `[XOR-Why-Deep-Learning-Exists](https://github.com/ruthuraraj-ml/XOR-Why-Deep-Learning-Exists)`
+
+---
+
+## 📐 Classical Machine Learning (Supervised Learning)
+
 ## 🔍 **1. Advertising Sales Prediction — Linear Regression**
 **Type:** Regression  
 Predicts product sales using TV, Radio, and Newspaper ad spending.  
@@ -77,6 +100,8 @@ Includes PR–AUC, ROC–AUC, and confusion matrices.
 🔗 Repository: `[Fraud-Detection-ML](https://github.com/ruthuraraj-ml/Online-Payment-Fraud-Detection-using-Machine-Learning)`
 
 ---
+
+## 🧠🤖 Generative & Multimodal AI
 
 ## 🖼️ **7. Image Caption Generator — Vision–Language Models (Generative AI)**
 
