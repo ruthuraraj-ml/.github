@@ -25,7 +25,7 @@ Each repository includes:
 
 ## 🧠 Foundations & Core Concepts
 
-### 🔹 XOR Problem — Why Deep Learning Exists
+### 🔹 1. XOR Problem — Why Deep Learning Exists
 **Type:** Learning Theory / Neural Network Foundations  
 
 A minimal, concept-driven demonstration explaining **why linear models and logistic regression fail**, and **why neural networks with hidden layers are necessary**.
@@ -41,6 +41,28 @@ The focus is on **decision boundaries, representation learning, and architectura
 **Models:** Logistic Regression, Multi-Layer Perceptron (MLP)
 
 🔗 Repository: `[XOR-Why-Deep-Learning-Exists](https://github.com/ruthuraraj-ml/XOR-Why-Deep-Learning-Exists)`
+
+---
+
+### 🔹 2. Neural Networks — From Basics to Stabilization (PyTorch)
+**Type:** Neural Network Foundations / Training Dynamics  
+
+A teaching-oriented, hands-on walkthrough of neural networks using PyTorch, designed to explain **why key neural network components exist and how they affect learning behavior**.
+
+This project incrementally builds neural networks and studies the effect of:
+- network depth and fully connected architectures,
+- Batch Normalization for training stability,
+- different activation functions,
+- optimizer choices and convergence behavior,
+- Dropout-based regularization,
+- inference on unseen real-world data,
+- extension from binary to multiclass classification.
+
+The emphasis is on **training dynamics, representation learning, and stabilization techniques**, rather than benchmark optimization.
+
+**Models:** Feedforward Neural Networks (MLP), BatchNorm Networks, Dropout Networks  
+
+🔗 Repository: `[Neural-Networks-Demo-PyTorch]([https://github.com/ruthuraraj-ml/Neural-Networks-Demo-PyTorch])`
 
 ---
 
