@@ -123,9 +123,39 @@ Includes PR–AUC, ROC–AUC, and confusion matrices.
 
 ---
 
+## 🔤 Embeddings & Representation Learning
+
+### 🔹 Word2Vec Embedding Explorer — From Training to Semantic Geometry
+**Type:** Representation Learning / NLP Foundations  
+
+An end-to-end implementation of Word2Vec (Skip-Gram with Negative Sampling) built from scratch in PyTorch and extended into a fully interactive browser-based embedding explorer.
+
+This project does not stop at training embeddings — it exposes how semantic structure emerges during learning by exporting intermediate checkpoints and visualizing them interactively.
+
+The system trains embeddings on the WikiText-2 corpus, exports selected vocabulary vectors across epochs, and enables live exploration of the vector space including nearest neighbors, similarity scoring, and analogy solving.
+
+**Concepts demonstrated:**
+- distributional hypothesis (“meaning from context”)
+- negative sampling and subsampling
+- vector similarity (cosine distance)
+- semantic clustering
+- word analogies as vector arithmetic
+- geometry of learned representations
+- effect of training progression on embedding quality
+
+The accompanying interactive web demo allows observing how random vectors gradually organize into meaningful semantic groups.
+
+**Models:** Word2Vec (Skip-Gram), Embedding Space Visualization  
+
+🔗 Repository: `[Embedding_Search](https://github.com/ruthuraraj-ml/Embedding_Search)`
+
+🔗 Live Demo: `https://ruthuraraj-ml.github.io/Embedding_Search/`
+
+---
+
 ## 🧠🤖 Generative & Multimodal AI
 
-## 🖼️ **7. Image Caption Generator — Vision–Language Models (Generative AI)**
+## 🖼️ **1. Image Caption Generator — Vision–Language Models (Generative AI)**
 
 **Type:** Multimodal AI (Vision + Language)
 
@@ -163,7 +193,7 @@ Rather than focusing only on accuracy, the project emphasizes:
 
 ---
 
-## 🔍🖼️ **8. Image Super-Resolution — SRGAN & ESRGAN**
+## 🔍🖼️ **2. Image Super-Resolution — SRGAN & ESRGAN**
 
 **Type:** Generative Adversarial Networks (Perceptual Super-Resolution)  
 
@@ -179,15 +209,33 @@ Emphasizes perceptual trade-offs under constrained training, with side-by-side a
 
 ---
 
-# 📌 Upcoming Projects
+## 🚧 Research & Development Roadmap
 
-Projects planned for future upload:
- 
-- 📷 **ESRGAN / Real-ESRGAN extension**  
-- 🤖 **VAE for Tabular Data (Generative Modeling for ML datasets)**  
-- 📄 **RAG-based LMS System (Auto notes + question generation)**  
-- 📈 **Surface Roughness Prediction (Mechanical Engineering + ML)**  
-- 🛠️ **Nano-additives ML Modelling (Bio-lubricants)**  
+The following projects are currently under development and reflect the long-term direction of this profile — bridging **representation learning, generative AI, and engineering applications**.
+
+### 🧠 Generative AI & Representation Learning
+- **Super-Resolution with ESRGAN / Real-ESRGAN Extension**  
+  Training and fine-tuning image super-resolution models with domain-specific datasets and evaluation of perceptual quality metrics.
+
+- **Variational Autoencoder (VAE) for Tabular Data**  
+  Generating synthetic ML datasets and studying latent structure learning for structured data (non-image generative modeling).
+
+- **Retrieval-Augmented Generation (RAG) Learning Management System**  
+  Automatic lecture note generation, semantic search, and question creation from educational content.
+
+---
+
+### ⚙️ AI for Mechanical & Manufacturing Engineering
+- **Surface Roughness Prediction using ML/DL**  
+  Predicting machining quality metrics from cutting parameters and process conditions.
+
+- **Nano-Additive Bio-Lubricant Modeling**  
+  Machine learning modeling of tribological performance and optimization of eco-friendly lubricant compositions.
+
+---
+
+### 🎯 Research Direction
+> Building interpretable AI systems that connect **mathematical learning principles → real engineering decision making**.  
 
 ---
 
