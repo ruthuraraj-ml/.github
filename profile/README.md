@@ -6,8 +6,10 @@ Welcome to **ruthuraraj-ml**, an organization showcasing the end-to-end Machine 
 Deep Learning, and Generative AI projects developed by **R. Ruthuraraj (AP/Mechanical Engg.)**  
 as part of continued learning, QIP coursework, teaching, and applied AI research.
 
-This portfolio includes classical ML, DNNs, GANs, multimodal AI, and domain-specific  
+This portfolio includes classical ML, DNNs, GANs, Agentic AI, multimodal AI, and domain-specific  
 engineering applications — each packaged with reports, notebooks, reproducible code, and documentation.
+
+⭐ If you find this project useful for teaching Agentic AI systems, consider starring the repository.
 
 ---
 
