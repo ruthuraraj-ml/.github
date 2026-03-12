@@ -1,11 +1,39 @@
 # 🚀 ruthuraraj-ml — Machine Learning & Generative AI Projects
 
+> *This portfolio reflects a structured learning journey from **Classical Machine Learning → Deep Learning → Representation Learning → Generative AI → Agentic AI Systems**.*
+
 Welcome to **ruthuraraj-ml**, an organization showcasing the end-to-end Machine Learning,  
 Deep Learning, and Generative AI projects developed by **R. Ruthuraraj (AP/Mechanical Engg.)**  
 as part of continued learning, QIP coursework, teaching, and applied AI research.
 
 This portfolio includes classical ML, DNNs, GANs, multimodal AI, and domain-specific  
 engineering applications — each packaged with reports, notebooks, reproducible code, and documentation.
+
+---
+
+# 🗺️ Portfolio Structure
+
+Projects in this organization are organized to reflect the **evolution of modern AI methods**:
+
+Classical Machine Learning
+
+        ↓
+Neural Networks & Deep Learning
+
+        ↓
+Representation Learning
+
+        ↓
+Agentic AI Systems
+
+        ↓
+Generative & Multimodal AI
+
+        ↓
+AI for Engineering Applications
+
+
+This structure mirrors the conceptual progression from **statistical learning → neural representation learning → generative models → intelligent AI systems**.
 
 ---
 
@@ -150,6 +178,54 @@ The accompanying interactive web demo allows observing how random vectors gradua
 🔗 Repository: `[Embedding_Search](https://github.com/ruthuraraj-ml/Embedding_Search)`
 
 🔗 Live Demo: `https://ruthuraraj-ml.github.io/Embedding_Search/`
+
+---
+
+## 🤖🧩 Agentic AI & LLM Systems
+
+### 🔹 AI Content Studio — Multi-Agent System for Educational Content Generation
+
+**Type:** Agentic AI / LLM Systems / AI Automation  
+
+An experimental **multi-agent AI system** that transforms a simple topic prompt into structured educational content by orchestrating specialized AI agents.
+
+Instead of relying on a single LLM, the system coordinates a **team of task-specific agents**, each responsible for a different stage of content creation — similar to a real production pipeline.
+
+The system includes:
+
+- **Research Agent** – retrieves factual information using Retrieval-Augmented Generation (RAG)  
+- **Image Agent** – converts conceptual explanations into scientific diagram prompts and generates diagrams using diffusion models  
+- **Reviewer Agent** – refines explanations into structured, beginner-friendly teaching content  
+- **Manager Agent** – orchestrates the workflow and coordinates agent collaboration
+
+This architecture demonstrates how **complex tasks can be decomposed into cooperative AI agents**, illustrating the emerging paradigm of **Agentic AI systems built on top of large language models**.
+
+---
+
+### Key Concepts Demonstrated
+- Multi-agent orchestration
+- Retrieval-Augmented Generation (RAG)
+- Tool-using LLM agents
+- Diagram generation with diffusion models
+- Structured explanation generation for teaching
+- Streamlit-based interactive AI interface
+
+---
+
+### Tech Stack
+- **CrewAI** — multi-agent orchestration  
+- **LLM APIs** — Gemini / Groq  
+- **HuggingFace Diffusion Models** — FLUX image generation  
+- **RAG Pipeline** — knowledge retrieval system  
+- **Streamlit** — interactive demo interface  
+
+---
+
+### Outcome
+- Demonstrates how **LLM-based agents can collaborate to produce multimodal educational content**
+- Serves as a practical introduction to **Agentic AI architectures**
+
+🔗 Repository: `[AI-Content-Studio-Multi-Agent-System](https://github.com/ruthuraraj-ml/Multi-Agent-AI-System-for-Educational-Content-Generation)`
 
 ---
 
