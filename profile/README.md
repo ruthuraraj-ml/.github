@@ -1,351 +1,200 @@
-# 🚀 ruthuraraj-ml — Machine Learning & Generative AI Projects
+# 🚀 ruthuraraj-ml — Machine Learning & Generative AI Portfolio
 
-> *This portfolio reflects a structured learning journey from **Classical Machine Learning → Deep Learning → Representation Learning → Generative AI → Agentic AI Systems**.*
+> *A structured learning journey: **Classical ML → Deep Learning → Representation Learning → Generative AI → Agentic AI Systems***
 
-Welcome to **ruthuraraj-ml**, an organization showcasing the end-to-end Machine Learning,  
-Deep Learning, and Generative AI projects developed by **R. Ruthuraraj (AP/Mechanical Engg.)**  
-as part of continued learning, QIP coursework, teaching, and applied AI research.
-
-This portfolio includes classical ML, DNNs, GANs, Agentic AI, multimodal AI, and domain-specific  
-engineering applications — each packaged with reports, notebooks, reproducible code, and documentation.
-
-⭐ If you find thses projects useful for Learning and teaching AI systems, consider starring the repository.
+**R. Ruthuraraj** · Assistant Professor, Mechanical Engineering · SNS College of Technology  
+*QIP Programme on 'AI to Generative AI' — IIIT Allahabad*
 
 ---
 
-# 🗺️ Portfolio Structure
+## 💡 Philosophy
 
-Projects in this organization are organized to reflect the **evolution of modern AI methods**:
+> **These projects are not about replicating state-of-the-art benchmarks or shipping polished end products.**
 
-Classical Machine Learning
+The goal of every repository here is to **build from scratch after genuinely understanding the underlying concepts** — and then to be honest about where things break, what the model cannot do, and why. Limitations are documented as carefully as results, because understanding failure modes is how real learning happens.
 
-        ↓
-Neural Networks & Deep Learning
+This matters especially coming from a Mechanical Engineering background: the instinct here is not to chase accuracy numbers, but to ask *why does this architecture work, where does it fail, and what does that tell us about the problem?* That question drives every project in this portfolio.
 
-        ↓
-Representation Learning
+If you are a student, researcher, or practitioner looking for polished, production-ready implementations — these may not be what you need. 
 
-        ↓
-Agentic AI Systems
-
-        ↓
-Generative & Multimodal AI
-
-        ↓
-AI for Engineering Applications
-
-
-This structure mirrors the conceptual progression from **statistical learning → neural representation learning → generative models → intelligent AI systems**.
+If you are trying to **actually understand** how these systems work from the ground up, you are in the right place.
 
 ---
 
-# 📚 Project Index
+## 🗺️ Learning Progression
 
-Below is the complete list of projects currently published in this organization.  
-Each repository includes:  
-✔ Report  
-✔ Colab notebook  
-✔ README  
-✔ Requirements  
-✔ Folder structure  
-✔ License  
-✔ Reproducible workflow
+```
+Classical Machine Learning  →  Neural Networks & Deep Learning
+        ↓                               ↓
+Representation Learning     →  Generative & Multimodal AI
+                                       ↓
+              Agentic AI Systems & LLM Applications
+                            ↓
+              AI for Engineering Applications
+```
+
+Each project is packaged with a **report, notebook, README, requirements, and reproducible workflow**.
 
 ---
 
 ## 🧠 Foundations & Core Concepts
 
-### 🔹 1. XOR Problem — Why Deep Learning Exists
-**Type:** Learning Theory / Neural Network Foundations  
+### [XOR Problem — Why Deep Learning Exists](https://github.com/ruthuraraj-ml/XOR-Why-Deep-Learning-Exists)
+![Type](https://img.shields.io/badge/Type-Learning%20Theory-blue) ![Framework](https://img.shields.io/badge/Framework-scikit--learn-orange)
 
-A minimal, concept-driven demonstration explaining **why linear models and logistic regression fail**, and **why neural networks with hidden layers are necessary**.
+A concept-driven demonstration of **why linear models fail and why hidden layers are necessary**. The project deliberately walks through OR and AND problems (linearly separable), then breaks logistic regression on XOR to show where it fails and why — before solving it with a single hidden layer MLP. The focus is entirely on decision boundaries and architectural necessity, not accuracy. 
 
-This project progresses through:
-- OR and AND problems (linear separability)
-- XOR problem (linear inseparability)
-- Logistic regression failure on XOR
-- Successful solution using a neural network with one hidden layer
+This is a conceptual bridge between classical ML and deep learning, not a benchmark exercise.
 
-The focus is on **decision boundaries, representation learning, and architectural necessity**, making this a conceptual bridge between classical machine learning and deep learning.
-
-**Models:** Logistic Regression, Multi-Layer Perceptron (MLP)
-
-🔗 Repository: `[XOR-Why-Deep-Learning-Exists](https://github.com/ruthuraraj-ml/XOR-Why-Deep-Learning-Exists)`
+`Logistic Regression` `MLP` `Decision Boundaries`
 
 ---
 
-### 🔹 2. Neural Networks — From Basics to Stabilization (PyTorch)
-**Type:** Neural Network Foundations / Training Dynamics  
+### [Neural Networks — From Basics to Stabilization (PyTorch)](https://github.com/ruthuraraj-ml/Neural-Networks-Demo-PyTorch)
+![Type](https://img.shields.io/badge/Type-Training%20Dynamics-blue) ![Framework](https://img.shields.io/badge/Framework-PyTorch-red)
 
-A teaching-oriented, hands-on walkthrough of neural networks using PyTorch, designed to explain **why key neural network components exist and how they affect learning behavior**.
+A teaching-oriented walkthrough that incrementally builds networks and isolates the effect of one component at a time — BatchNorm, activation functions, optimizers, Dropout, and multiclass extension. The emphasis is on *why* each component was invented and what training instability looks like without it, rather than achieving a target metric. Limitations at each stage are explicitly shown before the fix is introduced.
 
-This project incrementally builds neural networks and studies the effect of:
-- network depth and fully connected architectures,
-- Batch Normalization for training stability,
-- different activation functions,
-- optimizer choices and convergence behavior,
-- Dropout-based regularization,
-- inference on unseen real-world data,
-- extension from binary to multiclass classification.
-
-The emphasis is on **training dynamics, representation learning, and stabilization techniques**, rather than benchmark optimization.
-
-**Models:** Feedforward Neural Networks (MLP), BatchNorm Networks, Dropout Networks  
-
-🔗 Repository: `[Neural-Networks-Demo-PyTorch]([https://github.com/ruthuraraj-ml/Neural-Networks-Demo-PyTorch])`
+`PyTorch` `BatchNorm` `Dropout` `Training Dynamics`
 
 ---
 
-## 📐 Classical Machine Learning (Supervised Learning)
+## 📐 Classical Machine Learning
 
-## 🔍 **1. Advertising Sales Prediction — Linear Regression**
-**Type:** Regression  
-Predicts product sales using TV, Radio, and Newspaper ad spending.  
-Includes EDA, correlation analysis, multicollinearity checks, and regression diagnostics.  
-**Models:** Linear Regression  
-🔗 Repository: `[Advertising-Sales-Prediction](https://github.com/ruthuraraj-ml/Advertising-Sales-Prediction-using-Linear-Regression)`
-
----
-
-## 🚲 **2. Bike Sharing Demand Prediction — Linear Regression**
-**Type:** Time-Pattern Regression  
-Analyses hourly rental counts using weather, season, and time-based features.  
-Highlights temporal patterns, weather effects, and demand forecasting.  
-**Models:** Linear Regression  
-🔗 Repository: `[Bike-Demand-Prediction](https://github.com/ruthuraraj-ml/Bike-Sharing-Demand-Prediction)`
-
----
-
-## 🩺 **3. Diabetes Prediction — Logistic Regression**
-**Type:** Medical Classification  
-Binary diabetes prediction using clinical features from the Pima Indians Dataset.  
-Includes preprocessing, correlation, model metrics, ROC–AUC, and interpretability.  
-**Models:** Logistic Regression  
-🔗 Repository: `[Diabetes-Prediction](https://github.com/ruthuraraj-ml/Diabetes-Prediction-using-Logistic-Regression)`
-
----
-
-## 🚢 **4. Titanic Survival Prediction — Logistic Regression**
-**Type:** Binary Classification  
-Predicts survival probabilities using demographics, ticket class, family size, fare, etc.  
-Includes categorical encoding, scaling, and model evaluation metrics.  
-**Models:** Logistic Regression  
-🔗 Repository: `[Titanic-Survival-Prediction](https://github.com/ruthuraraj-ml/Titanic-Survival-Prediction-using-Logistic-Regression)`
-
----
-
-## 🍷 **5. Wine Quality Prediction — Random Forest Classifier**
-**Type:** Multiclass Classification  
-Predicts wine quality (3–8) from physicochemical attributes using ensemble learning.  
-Includes EDA, class imbalance analysis, feature importance, cross-validation.  
-**Models:** Random Forest  
-🔗 Repository: `[Wine-Quality-Prediction](https://github.com/ruthuraraj-ml/Wine-Quality-Prediction-using-Random-Forest-Classifier)`
-
----
-
-## 💳 **6. Online Payment Fraud Detection — ML (LR, RF, XGBoost)**
-**Type:** Imbalanced Classification  
-Detects fraudulent transactions in extreme class imbalance (~0.15%).  
-Compares Logistic Regression, Random Forest, and XGBoost.  
-Includes PR–AUC, ROC–AUC, and confusion matrices.  
-**Models:** LR, RF, XGBoost  
-🔗 Repository: `[Fraud-Detection-ML](https://github.com/ruthuraraj-ml/Online-Payment-Fraud-Detection-using-Machine-Learning)`
+| # | Project | Type | Models |
+|---|---------|------|--------|
+| 1 | [Advertising Sales Prediction](https://github.com/ruthuraraj-ml/Advertising-Sales-Prediction-using-Linear-Regression) | Regression | Linear Regression |
+| 2 | [Bike Sharing Demand Prediction](https://github.com/ruthuraraj-ml/Bike-Sharing-Demand-Prediction) | Time-Pattern Regression | Linear Regression |
+| 3 | [Diabetes Prediction](https://github.com/ruthuraraj-ml/Diabetes-Prediction-using-Logistic-Regression) | Medical Classification | Logistic Regression |
+| 4 | [Titanic Survival Prediction](https://github.com/ruthuraraj-ml/Titanic-Survival-Prediction-using-Logistic-Regression) | Binary Classification | Logistic Regression |
+| 5 | [Wine Quality Prediction](https://github.com/ruthuraraj-ml/Wine-Quality-Prediction-using-Random-Forest-Classifier) | Multiclass Classification | Random Forest |
+| 6 | [Online Payment Fraud Detection](https://github.com/ruthuraraj-ml/Online-Payment-Fraud-Detection-using-Machine-Learning) | Imbalanced Classification | LR · RF · XGBoost |
 
 ---
 
 ## 🔤 Embeddings & Representation Learning
 
-### 🔹 Word2Vec Embedding Explorer — From Training to Semantic Geometry
-**Type:** Representation Learning / NLP Foundations  
+### [Word2Vec Embedding Explorer](https://github.com/ruthuraraj-ml/Embedding_Search) · [🌐 Live Demo](https://ruthuraraj-ml.github.io/Embedding_Search/)
+![Type](https://img.shields.io/badge/Type-Representation%20Learning-purple) ![Framework](https://img.shields.io/badge/Framework-PyTorch-red)
 
-An end-to-end implementation of Word2Vec (Skip-Gram with Negative Sampling) built from scratch in PyTorch and extended into a fully interactive browser-based embedding explorer.
+End-to-end Word2Vec (Skip-Gram + Negative Sampling) built from scratch in PyTorch, extended into an **interactive browser-based embedding explorer**. Rather than stopping at training, the project exports intermediate checkpoints across epochs and visualises how semantic structure gradually emerges from random vectors — nearest neighbours, similarity scoring, analogy solving, and geometric clustering. The live demo makes the abstract distributional hypothesis tangible: you can watch meaning form in real time.
 
-This project does not stop at training embeddings — it exposes how semantic structure emerges during learning by exporting intermediate checkpoints and visualizing them interactively.
+**Concepts covered:** distributional hypothesis · negative sampling · cosine similarity · semantic clustering · vector arithmetic · geometry of learned representations · effect of training progression on embedding quality
 
-The system trains embeddings on the WikiText-2 corpus, exports selected vocabulary vectors across epochs, and enables live exploration of the vector space including nearest neighbors, similarity scoring, and analogy solving.
-
-**Concepts demonstrated:**
-- distributional hypothesis (“meaning from context”)
-- negative sampling and subsampling
-- vector similarity (cosine distance)
-- semantic clustering
-- word analogies as vector arithmetic
-- geometry of learned representations
-- effect of training progression on embedding quality
-
-The accompanying interactive web demo allows observing how random vectors gradually organize into meaningful semantic groups.
-
-**Models:** Word2Vec (Skip-Gram), Embedding Space Visualization  
-
-🔗 Repository: `[Embedding_Search](https://github.com/ruthuraraj-ml/Embedding_Search)`
-
-🔗 Live Demo: `https://ruthuraraj-ml.github.io/Embedding_Search/`
+`Word2Vec` `Skip-Gram` `FAISS` `Embedding Visualisation` `WikiText-2`
 
 ---
 
-## 🤖🧩 Agentic AI & LLM Systems
+## 🤖 Agentic AI & LLM Systems
 
-### 🔹 AI Content Studio — Multi-Agent System for Educational Content Generation
+### [Workshop Assistant — ReAct-lite RAG Agent](https://github.com/ruthuraraj-ml/Workshop-Assistant-RAG-Agent)
+![Type](https://img.shields.io/badge/Type-RAG%20%7C%20Agentic%20AI-darkgreen) ![Built](https://img.shields.io/badge/Built%20For-Live%20Workshop%20Demo-yellow)
 
-**Type:** Agentic AI / LLM Systems / AI Automation  
+Built as a **live demo for the final session** of a 3-day AI workshop (*From Machine Learning to AI Agents*, SNS College of Technology, Jan 2026). The agent answers questions grounded in workshop PDFs and notebooks, using a heuristic ReAct-style decision loop. 
 
-An experimental **multi-agent AI system** that transforms a simple topic prompt into structured educational content by orchestrating specialized AI agents.
+The core design decision — replacing an LLM routing call with a **FAISS L2 distance threshold** — was deliberate: it eliminates one API call per query, is fully deterministic, and makes the agent's reasoning transparent to a non-CS audience. 
 
-Instead of relying on a single LLM, the system coordinates a **team of task-specific agents**, each responsible for a different stage of content creation — similar to a real production pipeline.
+The UI explicitly labels every response as grounded or general, because honesty about system limitations was the point of the demo.
 
-The system includes:
-
-- **Research Agent** – retrieves factual information using Retrieval-Augmented Generation (RAG)  
-- **Image Agent** – converts conceptual explanations into scientific diagram prompts and generates diagrams using diffusion models  
-- **Reviewer Agent** – refines explanations into structured, beginner-friendly teaching content  
-- **Manager Agent** – orchestrates the workflow and coordinates agent collaboration
-
-This architecture demonstrates how **complex tasks can be decomposed into cooperative AI agents**, illustrating the emerging paradigm of **Agentic AI systems built on top of large language models**.
+`Gemini API` `SentenceTransformers` `FAISS` `pypdf` `Streamlit`
 
 ---
 
-### Key Concepts Demonstrated
-- Multi-agent orchestration
-- Retrieval-Augmented Generation (RAG)
-- Tool-using LLM agents
-- Diagram generation with diffusion models
-- Structured explanation generation for teaching
-- Streamlit-based interactive AI interface
+### [AI Content Studio — Multi-Agent System](https://github.com/ruthuraraj-ml/Multi-Agent-AI-System-for-Educational-Content-Generation)
+![Type](https://img.shields.io/badge/Type-Multi--Agent%20%7C%20LLM%20Systems-darkgreen)
+
+Transforms a topic prompt into structured educational content by orchestrating four specialised agents: Research (RAG) → Image (diffusion diagrams) → Reviewer (structured explanation) → Manager (workflow coordination). 
+
+The project is an experiment in understanding how multi-agent coordination actually works in practice — including where agent handoffs break down, where the RAG pipeline retrieves irrelevant content, and where diffusion-generated diagrams diverge from the intended concept. 
+
+These failure cases are documented alongside the working pipeline.
+
+`CrewAI` `Gemini` `Groq` `FLUX` `RAG` `Streamlit`
 
 ---
 
-### Tech Stack
-- **CrewAI** — multi-agent orchestration  
-- **LLM APIs** — Gemini / Groq  
-- **HuggingFace Diffusion Models** — FLUX image generation  
-- **RAG Pipeline** — knowledge retrieval system  
-- **Streamlit** — interactive demo interface  
+## 🧠 Generative & Multimodal AI
+
+### [Image Caption Generator — Vision–Language Models](https://github.com/ruthuraraj-ml/Image-Caption-Generation-using-Vision-Language-Models)
+![Type](https://img.shields.io/badge/Type-Multimodal%20AI-violet)
+
+Explores automatic caption generation progressing from a CNN–LSTM baseline (InceptionV3 + LSTM) through a Transformer decoder to pretrained vision–language transformers fine-tuned on a small real-world dataset. 
+
+The project deliberately validates learning via controlled overfitting before scaling up — and honestly documents why pretrained models outperform naive fine-tuning on limited data. 
+
+The analysis of what breaks under constrained hardware and small datasets is as central as the results themselves.
+
+`InceptionV3` `LSTM` `Transformer` `Beam Search` `HuggingFace`
 
 ---
 
-### Outcome
-- Demonstrates how **LLM-based agents can collaborate to produce multimodal educational content**
-- Serves as a practical introduction to **Agentic AI architectures**
+### [Image Super-Resolution — SRGAN & ESRGAN](https://github.com/ruthuraraj-ml/Image-Super-Resolution-using-SRGAN-and-ESRGAN)
+![Type](https://img.shields.io/badge/Type-Generative%20Adversarial%20Networks-violet)
 
-🔗 Repository: `[AI-Content-Studio-Multi-Agent-System](https://github.com/ruthuraraj-ml/Multi-Agent-AI-System-for-Educational-Content-Generation)`
+Reconstructs ×4 high-resolution images from low-resolution inputs using SRGAN and ESRGAN (RRDB-based). Built from scratch with patch-based training, warm-up stability phases, and adversarial fine-tuning on the DIV2K dataset. 
 
----
+The project documents the perceptual trade-offs honestly — results under constrained compute and training time are visibly imperfect, and the analysis explains *why*: mode collapse behaviour, discriminator instability, and the gap between perceptual loss and PSNR metrics. 
 
-## 🧠🤖 Generative & Multimodal AI
+Side-by-side and zoomed qualitative comparisons are included without cherry-picking.
 
-## 🖼️ **1. Image Caption Generator — Vision–Language Models (Generative AI)**
-
-**Type:** Multimodal AI (Vision + Language)
-
-This project explores **automatic image caption generation** using both **classical encoder–decoder architectures** and **modern transformer-based vision–language models**.
-
-The work begins with a **CNN–LSTM baseline** (InceptionV3 + LSTM) to validate cross-modal learning, followed by experiments with a **Transformer decoder** and **pretrained vision–language transformers** fine-tuned on a small real-world dataset.
-
-Rather than focusing only on accuracy, the project emphasizes:
-- model validation via overfitting tests,
-- the effect of dataset quality on caption fluency,
-- and practical challenges of fine-tuning multimodal models on limited data and hardware.
-
-**Key Components**
-- CNN encoder (InceptionV3, ImageNet pretrained)
-- LSTM / Transformer-based caption decoder
-- Pretrained vision–language transformer fine-tuning
-- Caption cleaning and preprocessing pipeline
-- Beam search, repetition penalty, and decoding strategies
-- Qualitative and empirical analysis of fine-tuning behavior
-
-**Datasets**
-- Open Images Captions (Micro) — Hugging Face
-
-**Models Explored**
-- CNN + LSTM (Encoder–Decoder)
-- CNN + Transformer Decoder (from scratch)
-- Pretrained Vision–Language Transformer (fine-tuned)
-
-**Outcome**
-- Demonstrates correct multimodal learning via controlled overfitting
-- Shows why pretrained captioning models outperform naive fine-tuning on small datasets
-- Serves as a **learning-focused Generative AI case study**, not just a benchmark-chasing implementation
-  
-🔗 Repository: `[Image-Caption-Generator](https://github.com/ruthuraraj-ml/Image-Caption-Generation-using-Vision-Language-Models))`
+`SRGAN` `ESRGAN` `RRDB` `VGG Perceptual Loss` `DIV2K`
 
 ---
 
-## 🔍🖼️ **2. Image Super-Resolution — SRGAN & ESRGAN**
+## 🔬 Research & Development Roadmap
 
-**Type:** Generative Adversarial Networks (Perceptual Super-Resolution)  
-
-Reconstructs ×4 high-resolution images from low-resolution inputs using **SRGAN** and its improved variant **ESRGAN (RRDB-based)**.
-
-Includes DIV2K dataset, patch-based training, warm-up and stability-oriented adversarial fine-tuning, and full-image qualitative evaluation.
-
-Emphasizes perceptual trade-offs under constrained training, with side-by-side and zoomed visual comparisons.
-
-**Models:** SRGAN, ESRGAN (Generator + Discriminator) 
-
-🔗 Repository: `[SRGAN, ESRGAN-SuperResolution](https://github.com/ruthuraraj-ml/Image-Super-Resolution-using-SRGAN-and-ESRGAN)`
-
----
-
-## 🚧 Research & Development Roadmap
-
-The following projects are currently under development and reflect the long-term direction of this profile — bridging **representation learning, generative AI, and engineering applications**.
-
-### 🧠 Generative AI & Representation Learning
-- **Super-Resolution with ESRGAN / Real-ESRGAN Extension**  
-  Training and fine-tuning image super-resolution models with domain-specific datasets and evaluation of perceptual quality metrics.
-
-- **Variational Autoencoder (VAE) for Tabular Data**  
-  Generating synthetic ML datasets and studying latent structure learning for structured data (non-image generative modeling).
-
-- **Retrieval-Augmented Generation (RAG) Learning Management System**  
-  Automatic lecture note generation, semantic search, and question creation from educational content.
-
----
+### 🧠 Generative AI & LLM Applications
+- **RAG Learning Management System** — Lecture note generation, semantic search, and question creation from educational content *(in development)*
+- **VAE for Tabular Data** — Synthetic dataset generation and latent structure learning for structured data
+- **Real-ESRGAN Extension** — Domain-specific fine-tuning with perceptual quality metric evaluation
 
 ### ⚙️ AI for Mechanical & Manufacturing Engineering
-- **Surface Roughness Prediction using ML/DL**  
-  Predicting machining quality metrics from cutting parameters and process conditions.
+- **Surface Roughness Prediction** — ML/DL models for machining quality from cutting parameters
+- **Nano-Additive Bio-Lubricant Modelling** — Tribological performance prediction and eco-lubricant optimisation
 
-- **Nano-Additive Bio-Lubricant Modeling**  
-  Machine learning modeling of tribological performance and optimization of eco-friendly lubricant compositions.
-
----
-
-### 🎯 Research Direction
-> Building interpretable AI systems that connect **mathematical learning principles → real engineering decision making**.  
+> **Research direction:** Building interpretable AI systems that connect mathematical learning principles to real engineering decision-making.
 
 ---
 
-# 🧱 Technology Stack Overview
+## 🛠️ Technology Stack
 
-- **Languages:** Python  
-- **ML Libraries:** scikit-learn, NumPy, Pandas  
-- **DL Libraries:** PyTorch, TensorFlow/Keras  
-- **GenAI:** CNN–LSTM, SRGAN, VGG Perceptual Loss  
-- **Tools:** Google Colab, HuggingFace, Jupyter Notebooks  
-- **Domains:** Regression, Classification, Ensemble Learning, GANs, Multimodal AI  
+**Languages:** Python
+
+**ML / DL:**
+`scikit-learn` `PyTorch` `TensorFlow/Keras` `NumPy` `Pandas`
+
+**Generative AI & LLMs:**
+`Gemini API` `Groq` `HuggingFace` `CrewAI` `SentenceTransformers` `FAISS`
+
+**Generative Models:**
+`SRGAN` `ESRGAN` `FLUX` `CNN–LSTM` `Vision–Language Transformers`
+
+**Tools & Platforms:**
+`Google Colab` `Streamlit` `Jupyter` `GitHub Actions`
+
+**Domains:**
+Regression · Classification · Ensemble Learning · GANs · Multimodal AI · RAG · Agentic AI · Manufacturing AI
 
 ---
 
-# 👨‍🏫 About
+## 👨‍🏫 About
 
 **R. Ruthuraraj**  
-Assistant Professor (Mechanical Engineering)  
-Specializing in Machine Learning, Deep Learning, Generative AI, and AI-enabled Engineering Applications.
+Assistant Professor · Mechanical Engineering · SNS College of Technology  
+AICTE QIP Programme — *AI to Generative AI*, IIIT Allahabad
 
-This organization represents his journey from classical ML → modern Deep Learning → Generative AI.
+This portfolio documents a self-directed learning journey from classical statistical learning through modern deep learning, generative models, and agentic AI systems — with a long-term focus on applying these methods to engineering problems.
 
 ---
 
-# ⭐ Acknowledgements
+## 🙏 Acknowledgements
 
-- AICTE QIP Programme on 'AI to Generative AI' — IIIT Allahabad
+- AICTE QIP Programme on *AI to Generative AI* — IIIT Allahabad
 - SNS College of Technology
-- Kaggle, UCI, HuggingFace Datasets  
-- PyTorch & TensorFlow communities  
-- SRGAN / ESRGAN research papers  
+- Kaggle · UCI · HuggingFace Datasets
+- PyTorch & TensorFlow communities
+- SRGAN / ESRGAN research papers
 
 ---
 
-⭐ *If you find the projects useful, please star the repositories!*  
+⭐ *If you find these projects useful for learning or teaching AI, please star the repositories!*
