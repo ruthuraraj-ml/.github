@@ -141,6 +141,20 @@ Side-by-side and zoomed qualitative comparisons are included without cherry-pick
 
 ---
 
+## 🚧 Current Focus
+
+• Building RAG-based educational systems
+
+• Exploring local LLM workflows and grounded AI assistants
+
+• Studying multi-agent coordination and AI orchestration patterns
+
+• Applying AI methods to engineering and manufacturing domains
+
+• Developing AI workshop content and hands-on demonstrations
+
+---
+
 ## 🔬 Research & Development Roadmap
 
 ### 🧠 Generative AI & LLM Applications
