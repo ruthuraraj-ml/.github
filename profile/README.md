@@ -7,6 +7,19 @@
 
 ---
 
+## 🌐 Portfolio Website
+
+**[ruthuraraj-ml.github.io/github.io](https://ruthuraraj-ml.github.io/github.io/)**
+
+A full portfolio site covering workshops delivered, projects built, certifications earned, and ways to get in touch — including details not in this README:
+
+- **3 workshops** designed and delivered in 2026 (January, March, May) at SNS College of Technology
+- **R-B.A.T** — RAG-Based Academic Tutor with four console modes (Tutor, Assessment, Presentation, Evaluation) running on local LLMs
+- Certifications: AICTE QIP at IIIT Allahabad · NPTEL Gold (Top 2%) · NPTEL Silver ×3
+- Active on [GitHub](https://github.com/ruthuraraj-ml) · [LeetCode](https://leetcode.com/u/ceAlpLZW04/) · [Exercism](https://exercism.org/profiles/ruthuraraj)
+
+---
+
 ## 💡 Philosophy
 
 > **These projects are not about replicating state-of-the-art benchmarks or shipping polished end products.**
@@ -87,6 +100,19 @@ End-to-end Word2Vec (Skip-Gram + Negative Sampling) built from scratch in PyTorc
 
 ## 🤖 Agentic AI & LLM Systems
 
+### [ReAct Web Research Agent](https://github.com/ruthuraraj-ml/ReAct-Web-Research-Agent)
+![Type](https://img.shields.io/badge/Type-ReAct%20%7C%20Agentic%20AI-darkgreen) ![LLMs](https://img.shields.io/badge/LLMs-Gemini%20%7C%20Groq%20LLaMA-yellow)
+
+An autonomous research agent built on the **ReAct (Reasoning + Acting)** paradigm from scratch — without using LangChain, LangGraph, or any agent framework. Given a topic, the agent generates research questions, then for each question runs a full Thought → Action → Observation → Summary loop using a **multi-LLM architecture**: Groq LLaMA 3.3 70B for fast reasoning steps, Gemini Flash Lite for planning and synthesis, and Tavily for live web retrieval.
+
+The project is an honest implementation of the ReAct loop as it actually works — including where it doesn't: the current loop runs once per question without re-querying on poor results, memory is in-session only, and there is no reflection step. These are documented as the natural next improvements, not hidden. The Streamlit dashboard generates a full ReAct trace and consolidated research report, both downloadable.
+
+**Concepts covered:** ReAct agent design · multi-LLM role specialisation · tool use and web grounding · structured research memory · trace generation · report synthesis
+
+`Gemini` `Groq LLaMA 3.3 70B` `Tavily` `ReAct Pattern` `Streamlit`
+
+---
+
 ### [Workshop Assistant — ReAct-lite RAG Agent](https://github.com/ruthuraraj-ml/Workshop-Assistant-RAG-Agent)
 ![Type](https://img.shields.io/badge/Type-RAG%20%7C%20Agentic%20AI-darkgreen) ![Built](https://img.shields.io/badge/Built%20For-Live%20Workshop%20Demo-yellow)
 
@@ -143,21 +169,19 @@ Side-by-side and zoomed qualitative comparisons are included without cherry-pick
 
 ## 🚧 Current Focus
 
-• Building RAG-based educational systems
-
-• Exploring local LLM workflows and grounded AI assistants
-
-• Studying multi-agent coordination and AI orchestration patterns
-
-• Applying AI methods to engineering and manufacturing domains
-
-• Developing AI workshop content and hands-on demonstrations
+- Building RAG-based educational systems
+- Building and evaluating ReAct agent patterns from scratch (without frameworks)
+- Exploring persistent memory and reflection loops in agentic systems
+- Studying multi-agent coordination and AI orchestration patterns
+- Applying AI methods to engineering and manufacturing domains
+- Developing AI workshop content and hands-on demonstrations
 
 ---
 
 ## 🔬 Research & Development Roadmap
 
 ### 🧠 Generative AI & LLM Applications
+- **ReAct Agent v2** — Agentic re-search loops, reflection step, and vector memory (ChromaDB) for cross-session persistence *(in development)*
 - **RAG Learning Management System** — Lecture note generation, semantic search, and question creation from educational content *(in development)*
 - **VAE for Tabular Data** — Synthetic dataset generation and latent structure learning for structured data
 - **Real-ESRGAN Extension** — Domain-specific fine-tuning with perceptual quality metric evaluation
@@ -182,6 +206,9 @@ Side-by-side and zoomed qualitative comparisons are included without cherry-pick
 
 **Generative Models:**
 `SRGAN` `ESRGAN` `FLUX` `CNN–LSTM` `Vision–Language Transformers`
+
+**Agentic Patterns:**
+`ReAct` `RAG` `Multi-Agent Orchestration` `Tool Use` `Structured Memory`
 
 **Tools & Platforms:**
 `Google Colab` `Streamlit` `Jupyter` `GitHub Actions`
