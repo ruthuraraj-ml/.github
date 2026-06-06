@@ -28,7 +28,7 @@ The goal of every repository here is to **build from scratch after genuinely und
 
 This matters especially coming from a Mechanical Engineering background: the instinct here is not to chase accuracy numbers, but to ask *why does this architecture work, where does it fail, and what does that tell us about the problem?* That question drives every project in this portfolio.
 
-If you are a student, researcher, or practitioner looking for polished, production-ready implementations — these may not be what you need. 
+If you are a student, researcher, or practitioner looking for polished, production-ready implementations — these may not be what you need.
 
 If you are trying to **actually understand** how these systems work from the ground up, you are in the right place.
 
@@ -55,7 +55,7 @@ Each project is packaged with a **report, notebook, README, requirements, and re
 ### [XOR Problem — Why Deep Learning Exists](https://github.com/ruthuraraj-ml/XOR-Why-Deep-Learning-Exists)
 ![Type](https://img.shields.io/badge/Type-Learning%20Theory-blue) ![Framework](https://img.shields.io/badge/Framework-scikit--learn-orange)
 
-A concept-driven demonstration of **why linear models fail and why hidden layers are necessary**. The project deliberately walks through OR and AND problems (linearly separable), then breaks logistic regression on XOR to show where it fails and why — before solving it with a single hidden layer MLP. The focus is entirely on decision boundaries and architectural necessity, not accuracy. 
+A concept-driven demonstration of **why linear models fail and why hidden layers are necessary**. The project deliberately walks through OR and AND problems (linearly separable), then breaks logistic regression on XOR to show where it fails and why — before solving it with a single hidden layer MLP. The focus is entirely on decision boundaries and architectural necessity, not accuracy.
 
 This is a conceptual bridge between classical ML and deep learning, not a benchmark exercise.
 
@@ -100,12 +100,40 @@ End-to-end Word2Vec (Skip-Gram + Negative Sampling) built from scratch in PyTorc
 
 ## 🤖 Agentic AI & LLM Systems
 
+### [Competitor Intelligence Agent](https://github.com/ruthuraraj-ml/competitor-intelligence-agent) ⭐ *Latest*
+![Type](https://img.shields.io/badge/Type-ReAct%20%7C%20LangGraph%20%7C%20RAG-darkgreen) ![LLM](https://img.shields.io/badge/LLM-Gemini%20Flash%20Lite-yellow) ![Memory](https://img.shields.io/badge/Memory-ChromaDB-blueviolet)
+
+A **LangGraph-powered ReAct-style agentic system** for retail market analysis — built in 2 days as a fully functional competitor intelligence platform for clothing stores. The system discovers nearby competitors via Apify's Google Places crawler, enriches each profile with empirical traffic data from BestTime API (with an analytical inference fallback engine for missing coverage), and runs a **reflection-driven validation loop** before generating AI executive reports.
+
+The architecture separates five concerns into distinct LangGraph nodes — Search, Enrichment, Analytics, Reflection, and Summary — with conditional routing that loops back to Search if the Reflection Engine returns `INSUFFICIENT`. Every completed analysis is vectorised into ChromaDB and becomes queryable through a Gemini RAG assistant across sessions.
+
+**What makes this different:** the dual-layer traffic strategy (empirical API → inference fallback) guarantees 100% traffic coverage even when primary data is unavailable — a real engineering decision, not an assumption that data will always be there.
+
+**Concepts covered:** LangGraph StateGraph design · ReAct cycle (Reason → Act → Observe → Reflect) · reflection-driven loop control · dual-layer data resilience · weighted competitive scoring · persistent vector memory · RAG over longitudinal market data · PDF/Excel report generation
+
+`LangGraph` `LangChain` `Gemini` `ChromaDB` `Apify` `BestTime` `Plotly` `Streamlit` `ReportLab` `OpenPyXL`
+
+---
+
+### [Reflective Travel Assistant](https://github.com/ruthuraraj-ml/reflective-travel-assistant)
+![Type](https://img.shields.io/badge/Type-ReAct%20%7C%20LangGraph%20%7C%20Multi--Tool-darkgreen) ![LLMs](https://img.shields.io/badge/LLMs-Gemini%20%7C%20Groq%20LLaMA-yellow)
+
+A **memory-aware agentic travel planning system** built on LangGraph — combining real-time weather data, web search, LLM reasoning, self-evaluation, and conditional re-search to generate personalized, visually enriched travel itineraries.
+
+The core feature is a **confidence-scored reflection loop**: after initial data collection, the agent evaluates its own information completeness (0–100% confidence score), identifies specific knowledge gaps (e.g., transportation options, seasonal events), and re-searches with targeted queries before generating the final guide. The loop runs for at most 2 cycles to prevent runaway API consumption, and every cycle's verdict, confidence score, and gaps are surfaced in the Agent Insights tab — making the agent's internal reasoning fully auditable.
+
+**Concepts covered:** LangGraph StateGraph · confidence-scored self-evaluation · conditional re-search · multi-tool orchestration (weather, search, images) · session memory · deduplicated research merging · transparent AI trace
+
+`LangGraph` `LangChain` `Gemini` `Groq LLaMA` `Tavily` `WeatherAPI` `Pexels` `Streamlit`
+
+---
+
 ### [ReAct Web Research Agent](https://github.com/ruthuraraj-ml/ReAct-Web-Research-Agent)
 ![Type](https://img.shields.io/badge/Type-ReAct%20%7C%20Agentic%20AI-darkgreen) ![LLMs](https://img.shields.io/badge/LLMs-Gemini%20%7C%20Groq%20LLaMA-yellow)
 
 An autonomous research agent built on the **ReAct (Reasoning + Acting)** paradigm from scratch — without using LangChain, LangGraph, or any agent framework. Given a topic, the agent generates research questions, then for each question runs a full Thought → Action → Observation → Summary loop using a **multi-LLM architecture**: Groq LLaMA 3.3 70B for fast reasoning steps, Gemini Flash Lite for planning and synthesis, and Tavily for live web retrieval.
 
-The project is an honest implementation of the ReAct loop as it actually works — including where it doesn't: the current loop runs once per question without re-querying on poor results, memory is in-session only, and there is no reflection step. These are documented as the natural next improvements, not hidden. The Streamlit dashboard generates a full ReAct trace and consolidated research report, both downloadable.
+The project is an honest implementation of the ReAct loop as it actually works — including where it doesn't: the current loop runs once per question without re-querying on poor results, memory is in-session only, and there is no reflection step. These are documented as the natural next improvements, not hidden.
 
 **Concepts covered:** ReAct agent design · multi-LLM role specialisation · tool use and web grounding · structured research memory · trace generation · report synthesis
 
@@ -116,11 +144,9 @@ The project is an honest implementation of the ReAct loop as it actually works �
 ### [Workshop Assistant — ReAct-lite RAG Agent](https://github.com/ruthuraraj-ml/Workshop-Assistant-RAG-Agent)
 ![Type](https://img.shields.io/badge/Type-RAG%20%7C%20Agentic%20AI-darkgreen) ![Built](https://img.shields.io/badge/Built%20For-Live%20Workshop%20Demo-yellow)
 
-Built as a **live demo for the final session** of a 3-day AI workshop (*From Machine Learning to AI Agents*, SNS College of Technology, Jan 2026). The agent answers questions grounded in workshop PDFs and notebooks, using a heuristic ReAct-style decision loop. 
+Built as a **live demo for the final session** of a 3-day AI workshop (*From Machine Learning to AI Agents*, SNS College of Technology, Jan 2026). The agent answers questions grounded in workshop PDFs and notebooks, using a heuristic ReAct-style decision loop.
 
-The core design decision — replacing an LLM routing call with a **FAISS L2 distance threshold** — was deliberate: it eliminates one API call per query, is fully deterministic, and makes the agent's reasoning transparent to a non-CS audience. 
-
-The UI explicitly labels every response as grounded or general, because honesty about system limitations was the point of the demo.
+The core design decision — replacing an LLM routing call with a **FAISS L2 distance threshold** — was deliberate: it eliminates one API call per query, is fully deterministic, and makes the agent's reasoning transparent to a non-CS audience.
 
 `Gemini API` `SentenceTransformers` `FAISS` `pypdf` `Streamlit`
 
@@ -129,11 +155,9 @@ The UI explicitly labels every response as grounded or general, because honesty 
 ### [AI Content Studio — Multi-Agent System](https://github.com/ruthuraraj-ml/Multi-Agent-AI-System-for-Educational-Content-Generation)
 ![Type](https://img.shields.io/badge/Type-Multi--Agent%20%7C%20LLM%20Systems-darkgreen)
 
-Transforms a topic prompt into structured educational content by orchestrating four specialised agents: Research (RAG) → Image (diffusion diagrams) → Reviewer (structured explanation) → Manager (workflow coordination). 
+Transforms a topic prompt into structured educational content by orchestrating four specialised agents: Research (RAG) → Image (diffusion diagrams) → Reviewer (structured explanation) → Manager (workflow coordination).
 
-The project is an experiment in understanding how multi-agent coordination actually works in practice — including where agent handoffs break down, where the RAG pipeline retrieves irrelevant content, and where diffusion-generated diagrams diverge from the intended concept. 
-
-These failure cases are documented alongside the working pipeline.
+The project is an experiment in understanding how multi-agent coordination actually works in practice — including where agent handoffs break down, where the RAG pipeline retrieves irrelevant content, and where diffusion-generated diagrams diverge from the intended concept. These failure cases are documented alongside the working pipeline.
 
 `CrewAI` `Gemini` `Groq` `FLUX` `RAG` `Streamlit`
 
@@ -141,14 +165,27 @@ These failure cases are documented alongside the working pipeline.
 
 ## 🧠 Generative & Multimodal AI
 
+### [Paperwise RAG — Multimodal Research Paper Q&A](https://github.com/ruthuraraj-ml/paperwise-rag) ⭐ *Latest*
+![Type](https://img.shields.io/badge/Type-Multimodal%20RAG%20%7C%20LLM%20Systems-violet) ![LLM](https://img.shields.io/badge/LLM-Gemini%20Flash%20Lite-yellow) ![Embeddings](https://img.shields.io/badge/Embeddings-BGE%20%2B%20FAISS-blue)
+
+A **multimodal RAG pipeline for research paper question answering** — handling text, tables, and figures from academic PDFs in a single unified system. Papers are parsed with Docling (preserving structure across all three modalities), embedded with BGE embeddings into a FAISS index, and answered via Gemini with vision-enabled summarisation for figures and tables.
+
+The system addresses a genuine engineering challenge: most RAG pipelines treat PDFs as plain text, losing the structured information in tables and the visual content in figures. Paperwise RAG queries each modality separately and merges results before generation, so answers can draw on the full informational content of a paper — not just its prose.
+
+Built to handle large academic PDFs robustly: OOM crashes on high-resolution page images were fixed by tuning Docling's image scale and disabling full-page rasterisation.
+
+**Concepts covered:** multimodal document parsing · three-modality retrieval (text / table / figure) · BGE embeddings · FAISS vector search · vision-language generation · RAG pipeline engineering · memory-efficient PDF processing
+
+`Docling` `BGE Embeddings` `FAISS` `Gemini Flash Lite` `Gradio` `Python`
+
+---
+
 ### [Image Caption Generator — Vision–Language Models](https://github.com/ruthuraraj-ml/Image-Caption-Generation-using-Vision-Language-Models)
 ![Type](https://img.shields.io/badge/Type-Multimodal%20AI-violet)
 
-Explores automatic caption generation progressing from a CNN–LSTM baseline (InceptionV3 + LSTM) through a Transformer decoder to pretrained vision–language transformers fine-tuned on a small real-world dataset. 
+Explores automatic caption generation progressing from a CNN–LSTM baseline (InceptionV3 + LSTM) through a Transformer decoder to pretrained vision–language transformers fine-tuned on a small real-world dataset.
 
-The project deliberately validates learning via controlled overfitting before scaling up — and honestly documents why pretrained models outperform naive fine-tuning on limited data. 
-
-The analysis of what breaks under constrained hardware and small datasets is as central as the results themselves.
+The project deliberately validates learning via controlled overfitting before scaling up — and honestly documents why pretrained models outperform naive fine-tuning on limited data. The analysis of what breaks under constrained hardware and small datasets is as central as the results themselves.
 
 `InceptionV3` `LSTM` `Transformer` `Beam Search` `HuggingFace`
 
@@ -157,11 +194,9 @@ The analysis of what breaks under constrained hardware and small datasets is as 
 ### [Image Super-Resolution — SRGAN & ESRGAN](https://github.com/ruthuraraj-ml/Image-Super-Resolution-using-SRGAN-and-ESRGAN)
 ![Type](https://img.shields.io/badge/Type-Generative%20Adversarial%20Networks-violet)
 
-Reconstructs ×4 high-resolution images from low-resolution inputs using SRGAN and ESRGAN (RRDB-based). Built from scratch with patch-based training, warm-up stability phases, and adversarial fine-tuning on the DIV2K dataset. 
+Reconstructs ×4 high-resolution images from low-resolution inputs using SRGAN and ESRGAN (RRDB-based). Built from scratch with patch-based training, warm-up stability phases, and adversarial fine-tuning on the DIV2K dataset.
 
-The project documents the perceptual trade-offs honestly — results under constrained compute and training time are visibly imperfect, and the analysis explains *why*: mode collapse behaviour, discriminator instability, and the gap between perceptual loss and PSNR metrics. 
-
-Side-by-side and zoomed qualitative comparisons are included without cherry-picking.
+The project documents the perceptual trade-offs honestly — results under constrained compute and training time are visibly imperfect, and the analysis explains *why*: mode collapse behaviour, discriminator instability, and the gap between perceptual loss and PSNR metrics. Side-by-side and zoomed qualitative comparisons are included without cherry-picking.
 
 `SRGAN` `ESRGAN` `RRDB` `VGG Perceptual Loss` `DIV2K`
 
@@ -169,19 +204,20 @@ Side-by-side and zoomed qualitative comparisons are included without cherry-pick
 
 ## 🚧 Current Focus
 
-- Building RAG-based educational systems
-- Building and evaluating ReAct agent patterns from scratch (without frameworks)
-- Exploring persistent memory and reflection loops in agentic systems
-- Studying multi-agent coordination and AI orchestration patterns
+- Building and refining LangGraph-based agentic systems with reflection and persistent memory
+- Expanding multimodal RAG pipelines for research and educational document Q&A
+- Exploring multi-agent coordination and specialist agent architectures
 - Applying AI methods to engineering and manufacturing domains
 - Developing AI workshop content and hands-on demonstrations
+- Swapping cloud LLMs for local models (Gemma via Ollama) across agentic projects
 
 ---
 
 ## 🔬 Research & Development Roadmap
 
 ### 🧠 Generative AI & LLM Applications
-- **ReAct Agent v2** — Agentic re-search loops, reflection step, and vector memory (ChromaDB) for cross-session persistence *(in development)*
+- **Paperwise RAG v2** — Gradio frontend polish, local LLM swap (Gemma via Ollama), cross-paper comparison *(in development)*
+- **Competitor Intelligence Agent v2** — Multi-location comparative analysis, geospatial mapping, specialist multi-agent architecture *(planned)*
 - **RAG Learning Management System** — Lecture note generation, semantic search, and question creation from educational content *(in development)*
 - **VAE for Tabular Data** — Synthetic dataset generation and latent structure learning for structured data
 - **Real-ESRGAN Extension** — Domain-specific fine-tuning with perceptual quality metric evaluation
@@ -202,16 +238,22 @@ Side-by-side and zoomed qualitative comparisons are included without cherry-pick
 `scikit-learn` `PyTorch` `TensorFlow/Keras` `NumPy` `Pandas`
 
 **Generative AI & LLMs:**
-`Gemini API` `Groq` `HuggingFace` `CrewAI` `SentenceTransformers` `FAISS`
+`Gemini API` `Groq` `HuggingFace` `CrewAI` `SentenceTransformers` `FAISS` `BGE Embeddings`
 
 **Generative Models:**
 `SRGAN` `ESRGAN` `FLUX` `CNN–LSTM` `Vision–Language Transformers`
 
-**Agentic Patterns:**
-`ReAct` `RAG` `Multi-Agent Orchestration` `Tool Use` `Structured Memory`
+**Agentic Patterns & Frameworks:**
+`LangGraph` `LangChain` `ReAct` `RAG` `Multi-Agent Orchestration` `Tool Use` `Persistent Memory` `Reflection Loops`
+
+**Vector Databases:**
+`ChromaDB` `FAISS`
+
+**Document Processing:**
+`Docling` `ReportLab` `OpenPyXL`
 
 **Tools & Platforms:**
-`Google Colab` `Streamlit` `Jupyter` `GitHub Actions`
+`Google Colab` `Streamlit` `Gradio` `Jupyter` `GitHub Actions`
 
 **Domains:**
 Regression · Classification · Ensemble Learning · GANs · Multimodal AI · RAG · Agentic AI · Manufacturing AI
