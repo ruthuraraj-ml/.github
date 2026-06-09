@@ -19,9 +19,9 @@
 A dedicated portfolio website showcasing projects, workshops, certifications, and ongoing AI research activities beyond what is covered in this GitHub profile.
 
 Highlights include:
-- **3 AI workshops designed and delivered** during 2026
-- **R-B.A.T** (RAG-Based Academic Tutor)
-- AICTE QIP and NPTEL achievements
+- 3 AI & Generative AI workshops designed and delivered during 2026
+- **R-B.A.T** — RAG-Based Academic Tutor with Tutor, Assessment, Presentation, and Evaluation modes
+- AICTE QIP and NPTEL Learning Journey
 - Project reports and architecture diagrams
 - Technical blogs and learning notes
 
