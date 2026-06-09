@@ -167,17 +167,6 @@ The project is an honest implementation of the ReAct loop as it actually works �
 
 ---
 
-### [Workshop Assistant — ReAct-lite RAG Agent](https://github.com/ruthuraraj-ml/Workshop-Assistant-RAG-Agent)
-![Type](https://img.shields.io/badge/Type-RAG%20%7C%20Agentic%20AI-darkgreen) ![Built](https://img.shields.io/badge/Built%20For-Live%20Workshop%20Demo-yellow)
-
-Built as a **live demo for the final session** of a 3-day AI workshop (*From Machine Learning to AI Agents*, SNS College of Technology, Jan 2026). The agent answers questions grounded in workshop PDFs and notebooks, using a heuristic ReAct-style decision loop.
-
-The core design decision — replacing an LLM routing call with a **FAISS L2 distance threshold** — was deliberate: it eliminates one API call per query, is fully deterministic, and makes the agent's reasoning transparent to a non-CS audience.
-
-`Gemini API` `SentenceTransformers` `FAISS` `pypdf` `Streamlit`
-
----
-
 ### [AI Content Studio — Multi-Agent System](https://github.com/ruthuraraj-ml/Multi-Agent-AI-System-for-Educational-Content-Generation)
 ![Type](https://img.shields.io/badge/Type-Multi--Agent%20%7C%20LLM%20Systems-darkgreen)
 
@@ -186,6 +175,17 @@ Transforms a topic prompt into structured educational content by orchestrating f
 The project is an experiment in understanding how multi-agent coordination actually works in practice — including where agent handoffs break down, where the RAG pipeline retrieves irrelevant content, and where diffusion-generated diagrams diverge from the intended concept. These failure cases are documented alongside the working pipeline.
 
 `CrewAI` `Gemini` `Groq` `FLUX` `RAG` `Streamlit`
+
+---
+
+### [Workshop Assistant — ReAct-lite RAG Agent](https://github.com/ruthuraraj-ml/Workshop-Assistant-RAG-Agent)
+![Type](https://img.shields.io/badge/Type-RAG%20%7C%20Agentic%20AI-darkgreen) ![Built](https://img.shields.io/badge/Built%20For-Live%20Workshop%20Demo-yellow)
+
+My First Agentic Implementation and Built as a **live demo for the final session** of a 3-day AI workshop (*From Machine Learning to AI Agents*, SNS College of Technology, Jan 2026). The agent answers questions grounded in workshop PDFs and notebooks, using a heuristic ReAct-style decision loop.
+
+The core design decision — replacing an LLM routing call with a **FAISS L2 distance threshold** — was deliberate: it eliminates one API call per query, is fully deterministic, and makes the agent's reasoning transparent to a non-CS audience.
+
+`Gemini API` `SentenceTransformers` `FAISS` `pypdf` `Streamlit`
 
 ---
 
@@ -206,17 +206,6 @@ Built to handle large academic PDFs robustly: OOM crashes on high-resolution pag
 
 ---
 
-### [Image Caption Generator — Vision–Language Models](https://github.com/ruthuraraj-ml/Image-Caption-Generation-using-Vision-Language-Models)
-![Type](https://img.shields.io/badge/Type-Multimodal%20AI-violet)
-
-Explores automatic caption generation progressing from a CNN–LSTM baseline (InceptionV3 + LSTM) through a Transformer decoder to pretrained vision–language transformers fine-tuned on a small real-world dataset.
-
-The project deliberately validates learning via controlled overfitting before scaling up — and honestly documents why pretrained models outperform naive fine-tuning on limited data. The analysis of what breaks under constrained hardware and small datasets is as central as the results themselves.
-
-`InceptionV3` `LSTM` `Transformer` `Beam Search` `HuggingFace`
-
----
-
 ### [Image Super-Resolution — SRGAN & ESRGAN](https://github.com/ruthuraraj-ml/Image-Super-Resolution-using-SRGAN-and-ESRGAN)
 ![Type](https://img.shields.io/badge/Type-Generative%20Adversarial%20Networks-violet)
 
@@ -225,6 +214,17 @@ Reconstructs ×4 high-resolution images from low-resolution inputs using SRGAN a
 The project documents the perceptual trade-offs honestly — results under constrained compute and training time are visibly imperfect, and the analysis explains *why*: mode collapse behaviour, discriminator instability, and the gap between perceptual loss and PSNR metrics. Side-by-side and zoomed qualitative comparisons are included without cherry-picking.
 
 `SRGAN` `ESRGAN` `RRDB` `VGG Perceptual Loss` `DIV2K`
+
+---
+
+### [Image Caption Generator — Vision–Language Models](https://github.com/ruthuraraj-ml/Image-Caption-Generation-using-Vision-Language-Models)
+![Type](https://img.shields.io/badge/Type-Multimodal%20AI-violet)
+
+Explores automatic caption generation progressing from a CNN–LSTM baseline (InceptionV3 + LSTM) through a Transformer decoder to pretrained vision–language transformers fine-tuned on a small real-world dataset.
+
+The project deliberately validates learning via controlled overfitting before scaling up — and honestly documents why pretrained models outperform naive fine-tuning on limited data. The analysis of what breaks under constrained hardware and small datasets is as central as the results themselves.
+
+`InceptionV3` `LSTM` `Transformer` `Beam Search` `HuggingFace`
 
 ---
 
