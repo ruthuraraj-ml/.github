@@ -100,7 +100,24 @@ End-to-end Word2Vec (Skip-Gram + Negative Sampling) built from scratch in PyTorc
 
 ## 🤖 Agentic AI & LLM Systems
 
-### [Competitor Intelligence Agent](https://github.com/ruthuraraj-ml/competitor-intelligence-agent) ⭐ *Latest*
+### [Enterprise Logistics Orchestration Hub](https://github.com/ruthuraraj-ml/enterprise-logistics-orchestration-hub) ⭐ *Latest*
+![Type](https://img.shields.io/badge/Type-CrewAI%20Flows%20%7C%20Parallel%20Branches%20%7C%20Decision%20Intelligence-darkgreen) ![LLM](https://img.shields.io/badge/LLM-Llama%203.3%20%7C%20Gemma%204%20%7C%20Gemini%20Flash%20Lite-yellow) ![Memory](https://img.shields.io/badge/Memory-SQLite%20(Delta%20Reasoning)-blueviolet)
+
+A **CrewAI Flow-powered logistics decision intelligence platform** built using a real-world supply chain dataset to transform operational metrics into executive-level optimization playbooks. The system combines inventory analytics, delivery risk analysis, geospatial route intelligence, reflection-driven validation, and persistent organizational memory to generate actionable logistics and inventory strategies.
+
+The architecture orchestrates specialized agents across parallel analytical branches. Inventory and logistics insights are generated independently, synchronized through Flow barriers, and passed into a memory-aware strategist that synthesizes optimization recommendations using both current analytics and historical strategies stored in SQLite. Every strategy is reviewed by an independent Critic Agent, which identifies risks, unsupported assumptions, and missing considerations before triggering a revision cycle when necessary. 
+
+A multi-LLM cognitive architecture assigns different models to specialized reasoning workloads: Llama 3.3 70B for inventory interpretation, Gemma 4 26B for logistics analysis, Gemma 4 31B for strategic synthesis, and Gemini 3.1 Flash Lite for independent validation. The platform also includes portfolio-level product comparison, historical strategy exploration, and live telemetry that exposes the complete agent orchestration process in real time.
+
+**What makes this different:** instead of treating memory as passive storage, historical optimization playbooks are actively retrieved and injected into future strategy generation, enabling delta reasoning where recommendations evolve from previous decisions rather than restarting from scratch.
+
+**Concepts covered:** CrewAI Flows · Multi-Agent orchestration · multi-LLM specialization · reflection-driven strategy revision · persistent SQLite memory · delta reasoning · parallel execution branches · synchronization barriers · executive decision support · logistics optimization · geospatial analytics · historical strategy comparison
+
+`CrewAI` `CrewAI Flows` `Llama 3.3 70B` `Gemma 4` `Gemini Flash Lite` `SQLite` `Gradio` `Pandas` `Pydantic` `Supply Chain Analytics`
+
+---
+
+### [Competitor Intelligence Agent](https://github.com/ruthuraraj-ml/competitor-intelligence-agent) 
 ![Type](https://img.shields.io/badge/Type-ReAct%20%7C%20LangGraph%20%7C%20RAG-darkgreen) ![LLM](https://img.shields.io/badge/LLM-Gemini%20Flash%20Lite-yellow) ![Memory](https://img.shields.io/badge/Memory-ChromaDB-blueviolet)
 
 A **LangGraph-powered ReAct-style agentic system** for retail market analysis — built in 2 days as a fully functional competitor intelligence platform for clothing stores. The system discovers nearby competitors via Apify's Google Places crawler, enriches each profile with empirical traffic data from BestTime API (with an analytical inference fallback engine for missing coverage), and runs a **reflection-driven validation loop** before generating AI executive reports.
@@ -165,7 +182,7 @@ The project is an experiment in understanding how multi-agent coordination actua
 
 ## 🧠 Generative & Multimodal AI
 
-### [Paperwise RAG — Multimodal Research Paper Q&A](https://github.com/ruthuraraj-ml/paperwise-rag) ⭐ *Latest*
+### [Paperwise RAG — Multimodal Research Paper Q&A](https://github.com/ruthuraraj-ml/paperwise-rag) 
 ![Type](https://img.shields.io/badge/Type-Multimodal%20RAG%20%7C%20LLM%20Systems-violet) ![LLM](https://img.shields.io/badge/LLM-Gemini%20Flash%20Lite-yellow) ![Embeddings](https://img.shields.io/badge/Embeddings-BGE%20%2B%20FAISS-blue)
 
 A **multimodal RAG pipeline for research paper question answering** — handling text, tables, and figures from academic PDFs in a single unified system. Papers are parsed with Docling (preserving structure across all three modalities), embedded with BGE embeddings into a FAISS index, and answered via Gemini with vision-enabled summarisation for figures and tables.
