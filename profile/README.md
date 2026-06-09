@@ -219,82 +219,105 @@ The project documents the perceptual trade-offs honestly — results under const
 
 ---
 
-## 🚧 Current Focus
+## 🎯 Current Focus
 
-- Building and refining LangGraph-based agentic systems with reflection and persistent memory
-- Expanding multimodal RAG pipelines for research and educational document Q&A
-- Exploring multi-agent coordination and specialist agent architectures
-- Applying AI methods to engineering and manufacturing domains
-- Developing AI workshop content and hands-on demonstrations
-- Swapping cloud LLMs for local models (Gemma via Ollama) across agentic projects
+- **Applying AI**, machine learning, and GenAI methods to engineering, manufacturing, and supply chain optimization
+- **Creating AI workshops**, demonstrations, and **hands-on learning experiences** for students and faculty
+- Expanding **multimodal and agentic RAG systems** for research, education, and knowledge management
+- Evaluating **local and hybrid LLM deployments** (Gemma, Ollama, and open-weight models) for cost-efficient agentic systems
+- Building **multi-agent AI systems** using CrewAI Flows, reflection loops, and persistent memory
+- Designing **multi-LLM architectures** that assign specialized models to different reasoning workloads
+- Developing **memory-aware decision intelligence platforms** for logistics, business, and engineering applications
+- Exploring agent orchestration patterns including routing, synchronization barriers, and **adaptive workflow execution**
 
 ---
 
 ## 🔬 Research & Development Roadmap
 
+### 🤖 Agentic AI & Decision Intelligence
+
+* **Enterprise Logistics Orchestration Hub v2** — Local LLM deployment, advanced telemetry dashboard, multi-product optimization campaigns, and autonomous strategy monitoring
+* **Competitor Intelligence Agent v2** — Multi-location comparative analysis, geospatial mapping, specialist multi-agent architecture, and longitudinal market memory
+* **RAG Learning Management System** — Course-aware note generation, semantic search, question-bank creation, and instructor-facing content automation
+* **Paperwise RAG v2** — Local LLM support (Gemma via Ollama), cross-paper comparison, citation-aware synthesis, and enhanced Gradio experience
+
 ### 🧠 Generative AI & LLM Applications
-- **Paperwise RAG v2** — Gradio frontend polish, local LLM swap (Gemma via Ollama), cross-paper comparison *(in development)*
-- **Competitor Intelligence Agent v2** — Multi-location comparative analysis, geospatial mapping, specialist multi-agent architecture *(planned)*
-- **RAG Learning Management System** — Lecture note generation, semantic search, and question creation from educational content *(in development)*
-- **VAE for Tabular Data** — Synthetic dataset generation and latent structure learning for structured data
-- **Real-ESRGAN Extension** — Domain-specific fine-tuning with perceptual quality metric evaluation
+
+* **Multi-Agent Decision Intelligence Systems** — Reflection loops, persistent memory, adaptive workflows, and model-specialized reasoning
+* **VAE for Tabular Data** — Synthetic dataset generation and latent structure learning for structured manufacturing datasets
+* **Real-ESRGAN Extension** — Domain-specific fine-tuning and perceptual quality evaluation for engineering imagery
 
 ### ⚙️ AI for Mechanical & Manufacturing Engineering
-- **Surface Roughness Prediction** — ML/DL models for machining quality from cutting parameters
-- **Nano-Additive Bio-Lubricant Modelling** — Tribological performance prediction and eco-lubricant optimisation
 
-> **Research direction:** Building interpretable AI systems that connect mathematical learning principles to real engineering decision-making.
+* **Surface Roughness Prediction** — ML/DL models for machining quality from cutting parameters
+* **Nano-Additive Bio-Lubricant Modelling** — Tribological performance prediction and eco-lubricant optimization
+* **Manufacturing Knowledge Systems** — Agentic assistants and RAG pipelines for engineering education and industrial decision support
+
+> **Research direction:** Building interpretable, memory-aware AI systems that bridge modern agentic intelligence with real-world engineering decision-making.
 
 ---
 
 ## 🛠️ Technology Stack
 
-**Languages:** Python
+**Languages:**
+`Python`
 
-**ML / DL:**
-`scikit-learn` `PyTorch` `TensorFlow/Keras` `NumPy` `Pandas`
+**Machine Learning & Deep Learning:**
+`Scikit-Learn` `PyTorch` `TensorFlow/Keras` `NumPy` `Pandas`
+
+**Agentic AI & Orchestration:**
+`CrewAI` `CrewAI Flows` `LangGraph` `LangChain` `ReAct` `Reflection Loops` `Persistent Memory` `Multi-Agent Orchestration`
 
 **Generative AI & LLMs:**
-`Gemini API` `Groq` `HuggingFace` `CrewAI` `SentenceTransformers` `FAISS` `BGE Embeddings`
+`Gemini API` `Groq` `HuggingFace` `Ollama` `SentenceTransformers` `BGE Embeddings`
+
+**RAG & Knowledge Systems:**
+`FAISS` `ChromaDB` `Docling` `Hybrid Retrieval` `Multimodal RAG`
 
 **Generative Models:**
-`SRGAN` `ESRGAN` `FLUX` `CNN–LSTM` `Vision–Language Transformers`
+`VAE` `SRGAN` `ESRGAN` `FLUX` `CNN-LSTM` `Vision-Language Transformers`
 
-**Agentic Patterns & Frameworks:**
-`LangGraph` `LangChain` `ReAct` `RAG` `Multi-Agent Orchestration` `Tool Use` `Persistent Memory` `Reflection Loops`
+**Data & Storage:**
+`SQLite` `FAISS` `ChromaDB`
 
-**Vector Databases:**
-`ChromaDB` `FAISS`
+**Frontend & Applications:**
+`Gradio` `Streamlit` `Jupyter` `Google Colab`
 
-**Document Processing:**
-`Docling` `ReportLab` `OpenPyXL`
+**Document & Reporting:**
+`ReportLab` `OpenPyXL`
 
-**Tools & Platforms:**
-`Google Colab` `Streamlit` `Gradio` `Jupyter` `GitHub Actions`
+**Dev Tools:**
+`Git` `GitHub` `GitHub Actions`
 
 **Domains:**
-Regression · Classification · Ensemble Learning · GANs · Multimodal AI · RAG · Agentic AI · Manufacturing AI
+Agentic AI · Decision Intelligence · RAG Systems · Multi-Agent Systems · Manufacturing AI · Supply Chain Analytics · Generative AI · Educational AI
 
 ---
 
 ## 👨‍🏫 About
 
-**R. Ruthuraraj**  
-Assistant Professor · Mechanical Engineering · SNS College of Technology  
+**R. Ruthuraraj**
+Assistant Professor · Mechanical Engineering · SNS College of Technology
 AICTE QIP Programme — *AI to Generative AI*, IIIT Allahabad
 
-This portfolio documents a self-directed learning journey from classical statistical learning through modern deep learning, generative models, and agentic AI systems — with a long-term focus on applying these methods to engineering problems.
+This portfolio documents a **self-directed learning journey** from classical machine learning and statistical modelling to deep learning, generative AI, retrieval-augmented generation (RAG), and modern agentic AI systems.
+
+What began as an effort to learn Python for teaching and engineering applications gradually evolved into a deeper exploration of how intelligent systems reason, retrieve information, collaborate, critique their own outputs, and learn from past decisions. Every project in this portfolio represents not only a completed system, but also the questions, experiments, debugging sessions, architectural redesigns, and lessons learned along the way.
+
+My long-term goal is to bridge **Artificial Intelligence and Engineering**, applying machine learning, generative AI, and agentic systems to manufacturing, supply chain optimization, engineering education, and real-world decision support. This portfolio serves as both a record of that journey and a collection of practical AI systems built through continuous learning and experimentation.
 
 ---
 
 ## 🙏 Acknowledgements
 
-- AICTE QIP Programme on *AI to Generative AI* — IIIT Allahabad
-- SNS College of Technology
-- Kaggle · UCI · HuggingFace Datasets
-- PyTorch & TensorFlow communities
-- SRGAN / ESRGAN research papers
+* SNS College of Technology
+* AICTE QIP Programme on *AI to Generative AI* — IIIT Allahabad
+* My NPTEL Course Instructors, whose teaching sparked my journey into Python, Machine Learning, and AI
+* Kaggle · UCI · Hugging Face Datasets
+* CrewAI, LangGraph, LangChain, and Open-Source AI Communities
+* PyTorch & TensorFlow Communities
+* Research communities advancing Generative AI, RAG, and Agentic Systems
 
 ---
 
-⭐ *If you find these projects useful for learning or teaching AI, please star the repositories!*
+⭐ *If you find these projects useful for learning, teaching, or exploring AI systems, consider starring the repositories and sharing feedback.*
