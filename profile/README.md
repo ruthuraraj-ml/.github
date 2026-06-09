@@ -11,12 +11,17 @@
 
 **[ruthuraraj-ml.github.io/github.io](https://ruthuraraj-ml.github.io/github.io/)**
 
-A full portfolio site covering workshops delivered, projects built, certifications earned, and ways to get in touch — including details not in this README:
+A dedicated portfolio website showcasing projects, workshops, certifications, and ongoing AI research activities beyond what is covered in this GitHub profile.
 
-- **3 workshops** designed and delivered in 2026 (January, March, May) at SNS College of Technology
-- **R-B.A.T** — RAG-Based Academic Tutor with four console modes (Tutor, Assessment, Presentation, Evaluation) running on local LLMs
-- Certifications: AICTE QIP at IIIT Allahabad · NPTEL Gold (Top 2%) · NPTEL Silver ×3
-- Active on [GitHub](https://github.com/ruthuraraj-ml) · [LeetCode](https://leetcode.com/u/ceAlpLZW04/) · [Exercism](https://exercism.org/profiles/ruthuraraj)
+Highlights include:
+
+* **3 AI workshops designed and delivered during 2026** at SNS College of Technology (January, March, and May)
+* **R-B.A.T (RAG-Based Academic Tutor)** featuring four operational modes: Tutor, Assessment, Presentation, and Evaluation, powered by local LLMs
+* **Professional Development & Certifications:** AICTE QIP (*AI to Generative AI*, IIIT Allahabad), NPTEL Gold (Top 2%), and NPTEL Silver ×3
+* Project reports, architecture diagrams, technical blogs, and learning notes
+* Links to active profiles on **[GitHub](https://github.com/ruthuraraj-ml) · [LeetCode](https://leetcode.com/u/ceAlpLZW04/) · [Exercism](https://exercism.org/profiles/ruthuraraj)**
+
+The website serves as a central hub documenting my ongoing journey in Machine Learning, Generative AI, Agentic Systems, and Engineering Applications of AI.
 
 ---
 
