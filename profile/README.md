@@ -126,7 +126,7 @@ A multi-LLM cognitive architecture assigns different models to specialized reaso
 
 ---
 
-### [Competitor Intelligence Agent](https://github.com/ruthuraraj-ml/competitor-intelligence-agent) 
+### [Stateful Market Intelligence Agent]((https://github.com/ruthuraraj-ml/stateful-market-intelligence-agent)) 
 ![Type](https://img.shields.io/badge/Type-ReAct%20%7C%20LangGraph%20%7C%20RAG-darkgreen) ![LLM](https://img.shields.io/badge/LLM-Gemini%20Flash%20Lite-yellow) ![Memory](https://img.shields.io/badge/Memory-ChromaDB-blueviolet)
 
 A **LangGraph-powered ReAct-style agentic system** for retail market analysis — built in 2 days as a fully functional competitor intelligence platform for clothing stores. The system discovers nearby competitors via Apify's Google Places crawler, enriches each profile with empirical traffic data from BestTime API (with an analytical inference fallback engine for missing coverage), and runs a **reflection-driven validation loop** before generating AI executive reports.
@@ -141,7 +141,7 @@ The architecture separates five concerns into distinct LangGraph nodes — Searc
 
 ---
 
-### [Reflective Travel Assistant](https://github.com/ruthuraraj-ml/reflective-travel-assistant)
+### [A Memory aware Agentic Travel Planning System with Self Evaluation and Conditional Re-Search](https://github.com/ruthuraraj-ml/A-Memory-Aware-Agentic-Travel-Planning-System-with-Self-Evaluation-and-Conditional-Re-Search)
 ![Type](https://img.shields.io/badge/Type-ReAct%20%7C%20LangGraph%20%7C%20Multi--Tool-darkgreen) ![LLMs](https://img.shields.io/badge/LLMs-Gemini%20%7C%20Groq%20LLaMA-yellow)
 
 A **memory-aware agentic travel planning system** built on LangGraph — combining real-time weather data, web search, LLM reasoning, self-evaluation, and conditional re-search to generate personalized, visually enriched travel itineraries.
@@ -191,7 +191,7 @@ The project is an experiment in understanding how multi-agent coordination actua
 
 ## 🧠 Generative & Multimodal AI
 
-### [Paperwise RAG — Multimodal Research Paper Q&A](https://github.com/ruthuraraj-ml/paperwise-rag) 
+### [Paperwise RAG — Multimodal Research Paper Q&A](Repository Temporarily Offline) 
 ![Type](https://img.shields.io/badge/Type-Multimodal%20RAG%20%7C%20LLM%20Systems-violet) ![LLM](https://img.shields.io/badge/LLM-Gemini%20Flash%20Lite-yellow) ![Embeddings](https://img.shields.io/badge/Embeddings-BGE%20%2B%20FAISS-blue)
 
 A **multimodal RAG pipeline for research paper question answering** — handling text, tables, and figures from academic PDFs in a single unified system. Papers are parsed with Docling (preserving structure across all three modalities), embedded with BGE embeddings into a FAISS index, and answered via Gemini with vision-enabled summarisation for figures and tables.
