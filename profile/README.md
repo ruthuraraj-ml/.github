@@ -92,6 +92,7 @@ A teaching-oriented walkthrough that incrementally builds networks and isolates 
 | 5 | [Wine Quality Prediction](https://github.com/ruthuraraj-ml/Wine-Quality-Prediction-using-Random-Forest-Classifier) | Multiclass Classification | Random Forest |
 | 6 | [Health Risk Classification for Insurance Premium Optimization](https://github.com/ruthuraraj-ml/Health-Risk-Classification-for-Insurance-Premium-Optimization) | Medical Risk Classification | LR · DT · RF |
 | 7 | [Online Payment Fraud Detection](https://github.com/ruthuraraj-ml/Online-Payment-Fraud-Detection-using-Machine-Learning) | Imbalanced Classification | LR · RF · XGBoost |
+| 8 | [NYC Taxi Trip Duration Prediction](https://github.com/ruthuraraj-ml/NYC-Taxi-Trip-Duration-Prediction) | Geospatial Regression | LR · Ridge · Lasso · DT · RF · GB |
 
 ---
 
