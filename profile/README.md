@@ -72,27 +72,36 @@ This is a conceptual bridge between classical ML and deep learning, not a benchm
 
 ---
 
-### [Neural Networks — From Basics to Stabilization (PyTorch)](https://github.com/ruthuraraj-ml/Neural-Networks-Demo-PyTorch)
-![Type](https://img.shields.io/badge/Type-Training%20Dynamics-blue) ![Framework](https://img.shields.io/badge/Framework-PyTorch-red)
-
-A teaching-oriented walkthrough that incrementally builds networks and isolates the effect of one component at a time — BatchNorm, activation functions, optimizers, Dropout, and multiclass extension. The emphasis is on *why* each component was invented and what training instability looks like without it, rather than achieving a target metric. Limitations at each stage are explicitly shown before the fix is introduced.
-
-`PyTorch` `BatchNorm` `Dropout` `Training Dynamics`
-
----
-
 ## 📐 Classical Machine Learning
+![Projects](https://img.shields.io/badge/Projects-8-blue)
+![Models](https://img.shields.io/badge/Models-Regression%20%7C%20Classification-green)
+![Framework](https://img.shields.io/badge/Framework-Scikit--Learn-orange)
+![Focus](https://img.shields.io/badge/Focus-Predictive%20Modeling-success)
 
-| # | Project | Type | Models |
-|---|---------|------|--------|
-| 1 | [Advertising Sales Prediction](https://github.com/ruthuraraj-ml/Advertising-Sales-Prediction-using-Linear-Regression) | Regression | Linear Regression |
-| 2 | [Bike Sharing Demand Prediction](https://github.com/ruthuraraj-ml/Bike-Sharing-Demand-Prediction) | Time-Pattern Regression | Linear Regression |
-| 3 | [Diabetes Prediction](https://github.com/ruthuraraj-ml/Diabetes-Prediction-using-Logistic-Regression) | Medical Classification | Logistic Regression |
-| 4 | [Titanic Survival Prediction](https://github.com/ruthuraraj-ml/Titanic-Survival-Prediction-using-Logistic-Regression) | Binary Classification | Logistic Regression |
-| 5 | [Wine Quality Prediction](https://github.com/ruthuraraj-ml/Wine-Quality-Prediction-using-Random-Forest-Classifier) | Multiclass Classification | Random Forest |
-| 6 | [Health Risk Classification for Insurance Premium Optimization](https://github.com/ruthuraraj-ml/Health-Risk-Classification-for-Insurance-Premium-Optimization) | Medical Risk Classification | LR · DT · RF |
-| 7 | [Online Payment Fraud Detection](https://github.com/ruthuraraj-ml/Online-Payment-Fraud-Detection-using-Machine-Learning) | Imbalanced Classification | LR · RF · XGBoost |
-| 8 | [NYC Taxi Trip Duration Prediction](https://github.com/ruthuraraj-ml/NYC-Taxi-Trip-Duration-Prediction) | Geospatial Regression | LR · Ridge · Lasso · DT · RF · GB |
+| # | Project                                                                                                                                                         | Type                                   | Models                             |
+| - | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ---------------------------------- |
+| 1 | [Advertising Sales Prediction](https://github.com/ruthuraraj-ml/Advertising-Sales-Prediction-using-Linear-Regression)                                           | Regression                             | Linear Regression                  |
+| 2 | [Bike Sharing Demand Prediction](https://github.com/ruthuraraj-ml/Bike-Sharing-Demand-Prediction)                                                               | Time-Pattern Regression                | Linear Regression                  |
+| 3 | [Diabetes Prediction](https://github.com/ruthuraraj-ml/Diabetes-Prediction-using-Logistic-Regression)                                                           | Medical Classification                 | Logistic Regression                |
+| 4 | [Titanic Survival Prediction](https://github.com/ruthuraraj-ml/Titanic-Survival-Prediction-using-Logistic-Regression)                                           | Binary Classification                  | Logistic Regression                |
+| 5 | [Wine Quality Prediction](https://github.com/ruthuraraj-ml/Wine-Quality-Prediction-using-Random-Forest-Classifier)                                              | Multiclass Classification              | Random Forest                      |
+| 6 | [Health Risk Classification for Insurance Premium Optimization](https://github.com/ruthuraraj-ml/Health-Risk-Classification-for-Insurance-Premium-Optimization) | Medical Risk Classification            | LR · DT · RF                       |
+| 7 | [Online Payment Fraud Detection](https://github.com/ruthuraraj-ml/Online-Payment-Fraud-Detection-using-Machine-Learning)                                        | Imbalanced Classification              | LR · RF · XGBoost                  |
+| 8 | [NYC Taxi Trip Duration Prediction](https://github.com/ruthuraraj-ml/NYC-Taxi-Trip-Duration-Prediction)                                                         | Geospatial Regression                  | LR · Ridge · Lasso · DT · RF · GB  |
+| 9 | [Deep Learning for Groundwater Quality Assessment](https://github.com/ruthuraraj-ml/deep-learning-for-groundwater-quality-assessment)                           | Regression + Multiclass Classification | ANN · BatchNorm · Dropout · Optuna |
+
+
+## 🧠 Deep Learning & Neural Networks
+![Projects](https://img.shields.io/badge/Projects-2-blue)
+![Framework](https://img.shields.io/badge/Framework-PyTorch-red)
+![Techniques](https://img.shields.io/badge/Techniques-ANN%20%7C%20BatchNorm%20%7C%20Dropout-purple)
+![Focus](https://img.shields.io/badge/Focus-Deep%20Learning-critical)
+
+| # | Project | Focus Area | Techniques |
+|---|---------|------------|------------|
+| 1 | [Neural Networks — From Basics to Stabilization (PyTorch)](https://github.com/ruthuraraj-ml/Neural-Networks-Demo-PyTorch) | Deep Learning Fundamentals | BatchNorm · Dropout · Optimizers · Training Dynamics |
+| 2 | [Deep Learning for Groundwater Quality Assessment](https://github.com/ruthuraraj-ml/deep-learning-for-groundwater-quality-assessment) | Applied Deep Learning Pipeline | ANN · Optimizer Comparison · BatchNorm · Dropout · Optuna |
+
 
 ---
 
@@ -273,20 +282,23 @@ The project deliberately validates learning via controlled overfitting before sc
 **Languages:**
 `Python`
 
-**Machine Learning & Deep Learning:**
-`Scikit-Learn` `PyTorch` `TensorFlow/Keras` `NumPy` `Pandas`
+**Machine Learning & Data Science:**
+`Scikit-Learn` `XGBoost` `NumPy` `Pandas` `SciPy` `Matplotlib` `Seaborn`
+
+**Deep Learning & Neural Networks:**
+`PyTorch` `TensorFlow/Keras` `ANNs` `CNNs` `VAE` `SRGAN` `ESRGAN` `Optuna`
+
+**Representation Learning & Embeddings:**
+`Word2Vec` `SentenceTransformers` `BGE Embeddings` `FAISS`
 
 **Agentic AI & Orchestration:**
 `CrewAI` `CrewAI Flows` `LangGraph` `LangChain` `ReAct` `Reflection Loops` `Persistent Memory` `Multi-Agent Orchestration`
 
 **Generative AI & LLMs:**
-`Gemini API` `Groq` `HuggingFace` `Ollama` `SentenceTransformers` `BGE Embeddings`
+`Gemini API` `Groq` `HuggingFace` `Ollama`
 
 **RAG & Knowledge Systems:**
 `FAISS` `ChromaDB` `Docling` `Hybrid Retrieval` `Multimodal RAG`
-
-**Generative Models:**
-`VAE` `SRGAN` `ESRGAN` `FLUX` `CNN-LSTM` `Vision-Language Transformers`
 
 **Data & Storage:**
 `SQLite` `FAISS` `ChromaDB`
@@ -301,7 +313,7 @@ The project deliberately validates learning via controlled overfitting before sc
 `Git` `GitHub` `GitHub Actions`
 
 **Domains:**
-Agentic AI · Decision Intelligence · RAG Systems · Multi-Agent Systems · Manufacturing AI · Supply Chain Analytics · Generative AI · Educational AI
+Machine Learning · Deep Learning · Agentic AI · RAG Systems · Multi-Agent Systems · Decision Intelligence · Supply Chain Analytics · Manufacturing AI · Educational AI
 
 ---
 
