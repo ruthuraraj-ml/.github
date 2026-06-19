@@ -90,18 +90,20 @@ This is a conceptual bridge between classical ML and deep learning, not a benchm
 | 8 | [NYC Taxi Trip Duration Prediction](https://github.com/ruthuraraj-ml/NYC-Taxi-Trip-Duration-Prediction)                                                         | Geospatial Regression                  | LR · Ridge · Lasso · DT · RF · GB  |
 | 9 | [Deep Learning for Groundwater Quality Assessment](https://github.com/ruthuraraj-ml/deep-learning-for-groundwater-quality-assessment)                           | Regression + Multiclass Classification | ANN · BatchNorm · Dropout · Optuna |
 
+---
 
 ## 🧠 Deep Learning & Neural Networks
-![Projects](https://img.shields.io/badge/Projects-2-blue)
+
+![Projects](https://img.shields.io/badge/Projects-3-blue)
 ![Framework](https://img.shields.io/badge/Framework-PyTorch-red)
-![Techniques](https://img.shields.io/badge/Techniques-ANN%20%7C%20BatchNorm%20%7C%20Dropout-purple)
-![Focus](https://img.shields.io/badge/Focus-Deep%20Learning-critical)
+![Techniques](https://img.shields.io/badge/Techniques-ANN%20%7C%20RNN%20%7C%20LSTM%20%7C%20GRU%20%7C%20BERT-purple)
+![Focus](https://img.shields.io/badge/Focus-Deep%20Learning%20%26%20NLP-critical)
 
-| # | Project | Focus Area | Techniques |
-|---|---------|------------|------------|
-| 1 | [Neural Networks — From Basics to Stabilization (PyTorch)](https://github.com/ruthuraraj-ml/Neural-Networks-Demo-PyTorch) | Deep Learning Fundamentals | BatchNorm · Dropout · Optimizers · Training Dynamics |
-| 2 | [Deep Learning for Groundwater Quality Assessment](https://github.com/ruthuraraj-ml/deep-learning-for-groundwater-quality-assessment) | Applied Deep Learning Pipeline | ANN · Optimizer Comparison · BatchNorm · Dropout · Optuna |
-
+| # | Project                                                                                                                                                   | Focus Area                     | Techniques                                                         |
+| - | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ------------------------------------------------------------------ |
+| 1 | [Twitter Sentiment Analysis using Deep Learning and Transformer Architectures](https://github.com/ruthuraraj-ml/Twitter-Sentiment-Analysis-Deep-Learning) | NLP & Sequence Modeling        | RNN · LSTM · GRU · BERT · Transfer Learning · Comparative Analysis |
+| 2 | [Deep Learning for Groundwater Quality Assessment](https://github.com/ruthuraraj-ml/deep-learning-for-groundwater-quality-assessment)                     | Applied Deep Learning Pipeline | ANN · Optimizer Comparison · BatchNorm · Dropout · Optuna          |
+| 3 | [Neural Networks — From Basics to Stabilization (PyTorch)](https://github.com/ruthuraraj-ml/Neural-Networks-Demo-PyTorch)                                 | Deep Learning Fundamentals     | BatchNorm · Dropout · Optimizers · Training Dynamics               |
 
 ---
 
