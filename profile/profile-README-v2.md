@@ -1,6 +1,6 @@
 <div align="center">
 
-![banner](https://raw.githubusercontent.com/ruthuraraj-ml/ruthuraraj-ml/main/banner.svg)
+![banner](https://github.com/ruthuraraj-ml/.github/blob/main/profile/banner.svg)
 
 <br/>
 
@@ -41,7 +41,7 @@ This matters especially coming from a Mechanical Engineering background: the ins
 
 ---
 
-## ⭐ Flagship Project
+## ⭐ Long-Term Vision
 
 ### [R-B.A.T — RAG-Based Academic Tutor](https://github.com/ruthuraraj-ml/R-BAT-Academic-Tutor)
 
