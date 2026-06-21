@@ -1,6 +1,8 @@
 <div align="center">
 
-![banner](https://github.com/ruthuraraj-ml/.github/blob/main/profile/banner.svg)
+![banner](https://raw.githubusercontent.com/ruthuraraj-ml/ruthuraraj-ml/main/banner.svg)
+
+![stats](https://raw.githubusercontent.com/ruthuraraj-ml/ruthuraraj-ml/main/stat-strip.svg)
 
 <br/>
 
@@ -25,7 +27,7 @@ This matters especially coming from a Mechanical Engineering background: the ins
 
 ---
 
-## ⭐ Long-Term Vision
+## ⭐ Dream Project
 
 ### [R-B.A.T — RAG-Based Academic Tutor](https://github.com/ruthuraraj-ml/R-BAT-Academic-Tutor)
 
@@ -85,11 +87,17 @@ Representation Learning     →  Generative & Multimodal AI
 Each project is packaged with a **report, notebook, README, requirements, and reproducible workflow**.
 
 ---
+<!--  ═══════════════════════════════════════════════════════════ -->
+<div align="center">
+<img src="https://img.shields.io/badge/──────────────────────%20%F0%9F%A7%A0%20%20FOUNDATIONS%20%20%F0%9F%A7%A0%20──────────────────────-1a1a2e?style=for-the-badge&labelColor=1a1a2e&color=534AB7"/>
+</div>
 
-## 🧠 Foundations
+*Classical ML · Deep Learning · Representation Learning — the ground every later project is built on.*
 
-### [XOR Problem — Why Deep Learning Exists](https://github.com/ruthuraraj-ml/XOR-Why-Deep-Learning-Exists)
-![Type](https://img.shields.io/badge/Type-Learning%20Theory-blue?style=flat-square) ![Framework](https://img.shields.io/badge/Framework-scikit--learn-orange?style=flat-square)
+---
+
+### 🔹 [XOR Problem — Why Deep Learning Exists](https://github.com/ruthuraraj-ml/XOR-Why-Deep-Learning-Exists)
+![Type](https://img.shields.io/badge/Type-Learning%20Theory-5b5fd6?style=flat-square) ![Framework](https://img.shields.io/badge/Framework-scikit--learn-orange?style=flat-square)
 
 A concept-driven demonstration of **why linear models fail and why hidden layers are necessary**. Walks through OR and AND (linearly separable), breaks logistic regression on XOR to show where it fails — then solves it with a single hidden layer MLP. The focus is entirely on decision boundaries and architectural necessity, not accuracy.
 
@@ -97,10 +105,8 @@ A concept-driven demonstration of **why linear models fail and why hidden layers
 
 ---
 
-## 📐 Classical Machine Learning
-
-![Projects](https://img.shields.io/badge/Projects-9-blue?style=flat-square)
-![Framework](https://img.shields.io/badge/Framework-Scikit--Learn-orange?style=flat-square)
+### 📐 Classical Machine Learning
+![Projects](https://img.shields.io/badge/9%20Projects-Regression%20%7C%20Classification%20%7C%20Deep%20Learning-534AB7?style=flat-square&labelColor=26215C)
 
 <details>
 <summary><b>View all 9 projects</b></summary>
@@ -115,16 +121,14 @@ A concept-driven demonstration of **why linear models fail and why hidden layers
 | 6 | [Health Risk Classification for Insurance Premium Optimization](https://github.com/ruthuraraj-ml/Health-Risk-Classification-for-Insurance-Premium-Optimization) | Medical Risk Classification | LR · DT · RF |
 | 7 | [Online Payment Fraud Detection](https://github.com/ruthuraraj-ml/Online-Payment-Fraud-Detection-using-Machine-Learning) | Imbalanced Classification | LR · RF · XGBoost |
 | 8 | [NYC Taxi Trip Duration Prediction](https://github.com/ruthuraraj-ml/NYC-Taxi-Trip-Duration-Prediction) | Geospatial Regression | LR · Ridge · Lasso · DT · RF · GB |
-| 9 | [Deep Learning for Groundwater Quality Assessment](https://github.com/ruthuraraj-ml/deep-learning-for-groundwater-quality-assessment) | Regression + Multiclass Classification | ANN · BatchNorm · Dropout · Optuna |
+| 9 | [Deep Learning for Groundwater Quality Assessment](https://github.com/ruthuraraj-ml/deep-learning-for-groundwater-quality-assessment) | Regression + Multiclass | ANN · BatchNorm · Dropout · Optuna |
 
 </details>
 
 ---
 
-## 🧠 Deep Learning & Neural Networks
-
-![Projects](https://img.shields.io/badge/Projects-3-blue?style=flat-square)
-![Framework](https://img.shields.io/badge/Framework-PyTorch-red?style=flat-square)
+### 🧠 Deep Learning & Neural Networks
+![Projects](https://img.shields.io/badge/3%20Projects-ANN%20%7C%20RNN%20%7C%20LSTM%20%7C%20BERT-534AB7?style=flat-square&labelColor=26215C)
 
 <details>
 <summary><b>View all 3 projects</b></summary>
@@ -132,17 +136,17 @@ A concept-driven demonstration of **why linear models fail and why hidden layers
 | # | Project | Focus Area | Techniques |
 | - | ------- | ---------- | ---------- |
 | 1 | [Twitter Sentiment Analysis](https://github.com/ruthuraraj-ml/Twitter-Sentiment-Analysis-Deep-Learning) | NLP & Sequence Modeling | RNN · LSTM · GRU · BERT · Transfer Learning |
-| 2 | [Groundwater Quality Assessment](https://github.com/ruthuraraj-ml/deep-learning-for-groundwater-quality-assessment) | Applied Deep Learning Pipeline | ANN · Optimizer Comparison · BatchNorm · Dropout · Optuna |
+| 2 | [Groundwater Quality Assessment](https://github.com/ruthuraraj-ml/deep-learning-for-groundwater-quality-assessment) | Applied Deep Learning | ANN · Optimizer Comparison · BatchNorm · Dropout · Optuna |
 | 3 | [Neural Networks — From Basics to Stabilization](https://github.com/ruthuraraj-ml/Neural-Networks-Demo-PyTorch) | Deep Learning Fundamentals | BatchNorm · Dropout · Optimizers · Training Dynamics |
 
 </details>
 
 ---
 
-## 🔤 Embeddings & Representation Learning
+### 🔤 Embeddings & Representation Learning
 
 ### [Word2Vec Embedding Explorer](https://github.com/ruthuraraj-ml/Embedding_Search) · [🌐 Live Demo](https://ruthuraraj-ml.github.io/Embedding_Search/)
-![Type](https://img.shields.io/badge/Type-Representation%20Learning-purple?style=flat-square) ![Framework](https://img.shields.io/badge/Framework-PyTorch-red?style=flat-square)
+![Type](https://img.shields.io/badge/Type-Representation%20Learning-7F77DD?style=flat-square) ![Framework](https://img.shields.io/badge/Framework-PyTorch-red?style=flat-square)
 
 End-to-end Word2Vec (Skip-Gram + Negative Sampling) built from scratch in PyTorch, extended into an **interactive browser-based embedding explorer**. Exports intermediate checkpoints across epochs and visualises how semantic structure gradually emerges from random vectors — nearest neighbours, similarity scoring, analogy solving, geometric clustering.
 
@@ -156,12 +160,18 @@ Distributional hypothesis · negative sampling · cosine similarity · semantic 
 </details>
 
 ---
+<!--  ═══════════════════════════════════════════════════════════ -->
+<div align="center">
+<img src="https://img.shields.io/badge/─────────────%20%F0%9F%A4%96%20%20AGENTIC%20AI%20%26%20LLM%20SYSTEMS%20%20%F0%9F%A4%96%20─────────────-0d1117?style=for-the-badge&labelColor=0d1117&color=1a6e3c"/>
+</div>
 
-## 🤖 Agentic AI & LLM Systems
+*Multi-agent orchestration · LangGraph · CrewAI Flows · Reflection loops · Persistent memory*
 
-### [Enterprise Logistics Orchestration Hub](https://github.com/ruthuraraj-ml/enterprise-logistics-orchestration-hub) ⭐ *Latest*
+---
 
-![Type](https://img.shields.io/badge/Type-CrewAI%20Flows%20%7C%20Decision%20Intelligence-darkgreen?style=flat-square)
+### 🔹 [Enterprise Logistics Orchestration Hub](https://github.com/ruthuraraj-ml/enterprise-logistics-orchestration-hub) ⭐ *Latest*
+
+![Type](https://img.shields.io/badge/Type-CrewAI%20Flows%20%7C%20Decision%20Intelligence-1a6e3c?style=flat-square&labelColor=0a3d1f)
 ![LLM](https://img.shields.io/badge/LLM-Llama%203.3%20%7C%20Gemma%204%20%7C%20Gemini-yellow?style=flat-square)
 ![Memory](https://img.shields.io/badge/Memory-SQLite%20Delta%20Reasoning-blueviolet?style=flat-square)
 
@@ -182,9 +192,9 @@ Multi-LLM cognitive architecture: Llama 3.3 70B for inventory interpretation · 
 
 ---
 
-### [Stateful Market Intelligence Agent](https://github.com/ruthuraraj-ml/stateful-market-intelligence-agent)
+### 🔹 [Stateful Market Intelligence Agent](https://github.com/ruthuraraj-ml/stateful-market-intelligence-agent)
 
-![Type](https://img.shields.io/badge/Type-ReAct%20%7C%20LangGraph%20%7C%20RAG-darkgreen?style=flat-square)
+![Type](https://img.shields.io/badge/Type-ReAct%20%7C%20LangGraph%20%7C%20RAG-1a6e3c?style=flat-square&labelColor=0a3d1f)
 ![LLM](https://img.shields.io/badge/LLM-Gemini%20Flash%20Lite-yellow?style=flat-square)
 ![Memory](https://img.shields.io/badge/Memory-ChromaDB-blueviolet?style=flat-square)
 
@@ -203,9 +213,9 @@ LangGraph StateGraph design · ReAct cycle · reflection-driven loop control · 
 
 ---
 
-### [Memory-Aware Agentic Travel Planner with Self-Evaluation](https://github.com/ruthuraraj-ml/A-Memory-Aware-Agentic-Travel-Planning-System-with-Self-Evaluation-and-Conditional-Re-Search)
+### 🔹 [Memory-Aware Agentic Travel Planner with Self-Evaluation](https://github.com/ruthuraraj-ml/A-Memory-Aware-Agentic-Travel-Planning-System-with-Self-Evaluation-and-Conditional-Re-Search)
 
-![Type](https://img.shields.io/badge/Type-LangGraph%20%7C%20Reflection%20Loop-darkgreen?style=flat-square)
+![Type](https://img.shields.io/badge/Type-LangGraph%20%7C%20Reflection%20Loop-1a6e3c?style=flat-square&labelColor=0a3d1f)
 ![LLMs](https://img.shields.io/badge/LLMs-Gemini%20%7C%20Groq%20LLaMA-yellow?style=flat-square)
 
 A **confidence-scored reflection loop** for travel planning: after initial data collection, the agent evaluates its own information completeness (0–100%), identifies knowledge gaps, and re-searches with targeted queries before generating the final guide. Maximum 2 re-search cycles to prevent runaway API consumption. Every cycle's verdict and gaps are surfaced in an Agent Insights tab — internal reasoning fully auditable.
@@ -221,9 +231,9 @@ LangGraph StateGraph · confidence-scored self-evaluation · conditional re-sear
 
 ---
 
-### [ReAct Web Research Agent](https://github.com/ruthuraraj-ml/ReAct-Web-Research-Agent)
+### 🔹 [ReAct Web Research Agent](https://github.com/ruthuraraj-ml/ReAct-Web-Research-Agent)
 
-![Type](https://img.shields.io/badge/Type-ReAct%20%7C%20No%20Framework-darkgreen?style=flat-square)
+![Type](https://img.shields.io/badge/Type-ReAct%20%7C%20No%20Framework-1a6e3c?style=flat-square&labelColor=0a3d1f)
 ![LLMs](https://img.shields.io/badge/LLMs-Gemini%20%7C%20Groq%20LLaMA-yellow?style=flat-square)
 
 Autonomous research agent built on the **ReAct paradigm from scratch** — no LangChain, no LangGraph, no framework. Full Thought → Action → Observation → Summary loop per research question using a multi-LLM split: Groq LLaMA 3.3 70B for reasoning steps, Gemini Flash Lite for planning and synthesis.
@@ -234,9 +244,9 @@ Honest implementation: limitations (single-pass loop, in-session memory only, no
 
 ---
 
-### [AI Content Studio — Multi-Agent System](https://github.com/ruthuraraj-ml/Multi-Agent-AI-System-for-Educational-Content-Generation)
+### 🔹 [AI Content Studio — Multi-Agent System](https://github.com/ruthuraraj-ml/Multi-Agent-AI-System-for-Educational-Content-Generation)
 
-![Type](https://img.shields.io/badge/Type-Multi--Agent%20%7C%20LLM%20Systems-darkgreen?style=flat-square)
+![Type](https://img.shields.io/badge/Type-Multi--Agent%20%7C%20LLM%20Systems-1a6e3c?style=flat-square&labelColor=0a3d1f)
 
 Four specialised agents — Research (RAG) → Image (diffusion) → Reviewer → Manager — orchestrated to transform a topic prompt into structured educational content. Failure cases (handoff breakdowns, irrelevant RAG retrievals, divergent diffusion diagrams) documented alongside the working pipeline.
 
@@ -244,21 +254,27 @@ Four specialised agents — Research (RAG) → Image (diffusion) → Reviewer �
 
 ---
 
-### [Workshop Assistant — ReAct-lite RAG Agent](https://github.com/ruthuraraj-ml/Workshop-Assistant-RAG-Agent)
+### 🔹 [Workshop Assistant — ReAct-lite RAG Agent](https://github.com/ruthuraraj-ml/Workshop-Assistant-RAG-Agent)
 
-![Type](https://img.shields.io/badge/Type-RAG%20%7C%20Agentic%20AI-darkgreen?style=flat-square) ![Built](https://img.shields.io/badge/Built%20For-Live%20Workshop%20Demo-yellow?style=flat-square)
+![Type](https://img.shields.io/badge/Type-RAG%20%7C%20Agentic%20AI-1a6e3c?style=flat-square&labelColor=0a3d1f) ![Built](https://img.shields.io/badge/Built%20For-Live%20Workshop%20Demo-yellow?style=flat-square)
 
 *First agentic implementation.* Built as a live demo for the final session of a 3-day AI workshop (SNS College of Technology, Jan 2026). Replaces LLM routing with a **FAISS L2 distance threshold** — one fewer API call per query, fully deterministic, and makes the agent's decision logic transparent to a non-CS audience.
 
 `Gemini API` `SentenceTransformers` `FAISS` `pypdf` `Streamlit`
 
 ---
+<!--  ═══════════════════════════════════════════════════════════ -->
+<div align="center">
+<img src="https://img.shields.io/badge/──────────%20%F0%9F%A7%AC%20%20GENERATIVE%20%26%20MULTIMODAL%20AI%20%20%F0%9F%A7%AC%20──────────-0d1117?style=for-the-badge&labelColor=0d1117&color=6b21a8"/>
+</div>
 
-## 🧠 Generative & Multimodal AI
+*RAG pipelines · Multimodal systems · Generative models · Vision-Language*
 
-### [Paperwise RAG — Multimodal Research Paper Q&A](https://github.com/ruthuraraj-ml/paperwise-rag) *(Repository Temporarily Offline)*
+---
 
-![Type](https://img.shields.io/badge/Type-Multimodal%20RAG-violet?style=flat-square) ![LLM](https://img.shields.io/badge/LLM-Gemini%20Flash%20Lite-yellow?style=flat-square) ![Embeddings](https://img.shields.io/badge/Embeddings-BGE%20%2B%20FAISS-blue?style=flat-square)
+### 🔹 [Paperwise RAG — Multimodal Research Paper Q&A](https://github.com/ruthuraraj-ml/paperwise-rag) *(Repository Temporarily Offline)*
+
+![Type](https://img.shields.io/badge/Type-Multimodal%20RAG-6b21a8?style=flat-square&labelColor=3b0764) ![LLM](https://img.shields.io/badge/LLM-Gemini%20Flash%20Lite-yellow?style=flat-square) ![Embeddings](https://img.shields.io/badge/Embeddings-BGE%20%2B%20FAISS-blue?style=flat-square)
 
 A **multimodal RAG pipeline** handling text, tables, and figures from academic PDFs in a single unified system. Docling preserves structure across all three modalities; BGE embeds into FAISS; Gemini answers with vision-enabled summarisation for figures and tables. Queries each modality separately and merges before generation.
 
@@ -275,9 +291,9 @@ Addresses a genuine engineering challenge: most RAG pipelines treat PDFs as plai
 
 ---
 
-### [Image Super-Resolution — SRGAN & ESRGAN](https://github.com/ruthuraraj-ml/Image-Super-Resolution-using-SRGAN-and-ESRGAN)
+### 🔹 [Image Super-Resolution — SRGAN & ESRGAN](https://github.com/ruthuraraj-ml/Image-Super-Resolution-using-SRGAN-and-ESRGAN)
 
-![Type](https://img.shields.io/badge/Type-Generative%20Adversarial%20Networks-violet?style=flat-square)
+![Type](https://img.shields.io/badge/Type-Generative%20Adversarial%20Networks-6b21a8?style=flat-square&labelColor=3b0764)
 
 ×4 image reconstruction (SRGAN and RRDB-based ESRGAN) built from scratch with patch-based training, warm-up stability phases, and adversarial fine-tuning on DIV2K. Results under constrained compute are documented honestly — mode collapse, discriminator instability, and the gap between perceptual loss and PSNR are all explained rather than cherry-picked around.
 
@@ -285,9 +301,9 @@ Addresses a genuine engineering challenge: most RAG pipelines treat PDFs as plai
 
 ---
 
-### [Image Caption Generator — Vision–Language Models](https://github.com/ruthuraraj-ml/Image-Caption-Generation-using-Vision-Language-Models)
+### 🔹 [Image Caption Generator — Vision–Language Models](https://github.com/ruthuraraj-ml/Image-Caption-Generation-using-Vision-Language-Models)
 
-![Type](https://img.shields.io/badge/Type-Multimodal%20AI-violet?style=flat-square)
+![Type](https://img.shields.io/badge/Type-Multimodal%20AI-6b21a8?style=flat-square&labelColor=3b0764)
 
 Caption generation progressing from CNN–LSTM baseline (InceptionV3 + LSTM) through Transformer decoder to pretrained vision–language transformers. Validates learning via controlled overfitting before scaling up. Documents why pretrained models outperform naive fine-tuning on limited data — the analysis of what breaks is as central as the results.
 
