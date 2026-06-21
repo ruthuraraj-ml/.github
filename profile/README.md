@@ -32,7 +32,7 @@ This matters especially coming from a Mechanical Engineering background: the ins
 ### [R-B.A.T — RAG-Based Academic Tutor](https://github.com/ruthuraraj-ml/R-BAT-Academic-Tutor)
 
 ![Type](https://img.shields.io/badge/Type-RAG%20%7C%20Educational%20AI%20%7C%20Agentic%20Workflows-blueviolet?style=flat-square)
-![LLM](https://img.shields.io/badge/LLM-Gemma3%3A4b%20%7C%20Mistral%20\(Ollama\)-yellow?style=flat-square)
+![LLM](https://img.shields.io/badge/LLM-Gemma%20%7C%20Mistral%20\(Ollama\)-yellow?style=flat-square)
 ![Infra](https://img.shields.io/badge/Infra-Fully%20Local%20%7C%20CPU%20Only-success?style=flat-square)
 ![Repo](https://img.shields.io/badge/Repo-Private%20%7C%20Demo%20on%20Request-red?style=flat-square)
 
