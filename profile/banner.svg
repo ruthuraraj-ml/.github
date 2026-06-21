@@ -1,0 +1,114 @@
+<svg width="100%" viewBox="0 0 680 210" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>R. Ruthuraraj — Mechanical Engineer · AI Practitioner</title>
+  <desc>Animated banner with spinning gears on the left, flowing neural network on the right, and name with title centred.</desc>
+  <defs>
+    <style>
+      @keyframes spin     { to { transform: rotate(360deg);  } }
+      @keyframes spin-rev { to { transform: rotate(-360deg); } }
+      @keyframes spin-sm  { to { transform: rotate(360deg);  } }
+      @keyframes node-in  { 0%,100%{opacity:.5;} 50%{opacity:1;} }
+      @keyframes node-hid { 0%,100%{opacity:.45;} 50%{opacity:.95;} }
+      @keyframes node-out { 0%,100%{opacity:.55;r:7px;} 50%{opacity:1;r:9px;} }
+      @keyframes flow     { 0%{stroke-dashoffset:40;opacity:.1;} 50%{opacity:.9;} 100%{stroke-dashoffset:0;opacity:.1;} }
+      @keyframes fadein   { from{opacity:0;transform:translateY(6px);} to{opacity:1;transform:translateY(0);} }
+      @keyframes arrow-pulse { 0%,100%{opacity:.3;} 50%{opacity:1;} }
+      .g-large { transform-origin:72px 106px; animation:spin 12s linear infinite; }
+      .g-small { transform-origin:120px 64px;  animation:spin-rev 6s linear infinite; }
+      .g-tiny  { transform-origin:104px 148px; animation:spin-sm 8s linear infinite; }
+      .ni { animation:node-in  2.8s ease-in-out infinite; }
+      .nh { animation:node-hid 3.2s ease-in-out infinite .4s; }
+      .no { animation:node-out 2.4s ease-in-out infinite .8s; }
+      .f1{stroke-dasharray:18 18;animation:flow 2s ease-in-out infinite;}
+      .f2{stroke-dasharray:18 18;animation:flow 2s ease-in-out infinite .25s;}
+      .f3{stroke-dasharray:18 18;animation:flow 2s ease-in-out infinite .5s;}
+      .f4{stroke-dasharray:18 18;animation:flow 2s ease-in-out infinite .75s;}
+      .f5{stroke-dasharray:18 18;animation:flow 2s ease-in-out infinite 1s;}
+      .f6{stroke-dasharray:18 18;animation:flow 2s ease-in-out infinite 1.25s;}
+      .f7{stroke-dasharray:18 18;animation:flow 2s ease-in-out infinite 1.5s;}
+      .f8{stroke-dasharray:18 18;animation:flow 2s ease-in-out infinite 1.75s;}
+      .t1{animation:fadein .6s ease-out .1s both;}
+      .t2{animation:fadein .6s ease-out .35s both;}
+      .t3{animation:fadein .6s ease-out .6s both;}
+      .t4{animation:fadein .6s ease-out .85s both;}
+      .arr{animation:arrow-pulse 2s ease-in-out infinite;}
+    </style>
+  </defs>
+  <rect width="680" height="210" rx="14" fill="#080812"/>
+  <line x1="0" y1="53"  x2="680" y2="53"  stroke="#fff" stroke-width=".25" opacity=".04"/>
+  <line x1="0" y1="106" x2="680" y2="106" stroke="#fff" stroke-width=".25" opacity=".04"/>
+  <line x1="0" y1="159" x2="680" y2="159" stroke="#fff" stroke-width=".25" opacity=".04"/>
+  <line x1="170" y1="0" x2="170" y2="210" stroke="#fff" stroke-width=".25" opacity=".03"/>
+  <line x1="510" y1="0" x2="510" y2="210" stroke="#fff" stroke-width=".25" opacity=".03"/>
+  <g class="g-large">
+    <circle cx="72" cy="106" r="30" fill="#0f0f22" stroke="#6E40C9" stroke-width="1.6"/>
+    <circle cx="72" cy="106" r="9"  fill="#6E40C9" opacity=".5"/>
+    <circle cx="72" cy="106" r="4"  fill="#AFA9EC" opacity=".8"/>
+    <g fill="#1a1535" stroke="#7F77DD" stroke-width="1.2">
+      <rect x="64" y="62"  width="16" height="13" rx="2.5" transform="rotate(0   72 106)"/>
+      <rect x="64" y="62"  width="16" height="13" rx="2.5" transform="rotate(36  72 106)"/>
+      <rect x="64" y="62"  width="16" height="13" rx="2.5" transform="rotate(72  72 106)"/>
+      <rect x="64" y="62"  width="16" height="13" rx="2.5" transform="rotate(108 72 106)"/>
+      <rect x="64" y="62"  width="16" height="13" rx="2.5" transform="rotate(144 72 106)"/>
+      <rect x="64" y="62"  width="16" height="13" rx="2.5" transform="rotate(180 72 106)"/>
+      <rect x="64" y="62"  width="16" height="13" rx="2.5" transform="rotate(216 72 106)"/>
+      <rect x="64" y="62"  width="16" height="13" rx="2.5" transform="rotate(252 72 106)"/>
+      <rect x="64" y="62"  width="16" height="13" rx="2.5" transform="rotate(288 72 106)"/>
+      <rect x="64" y="62"  width="16" height="13" rx="2.5" transform="rotate(324 72 106)"/>
+    </g>
+  </g>
+  <g class="g-small">
+    <circle cx="120" cy="64" r="14" fill="#0f0f22" stroke="#AFA9EC" stroke-width="1.2"/>
+    <circle cx="120" cy="64" r="4"  fill="#AFA9EC" opacity=".5"/>
+    <circle cx="120" cy="64" r="2"  fill="#EEEDFE" opacity=".7"/>
+    <g fill="#1a1535" stroke="#AFA9EC" stroke-width="1">
+      <rect x="114" y="47"  width="12" height="9" rx="2" transform="rotate(0   120 64)"/>
+      <rect x="114" y="47"  width="12" height="9" rx="2" transform="rotate(45  120 64)"/>
+      <rect x="114" y="47"  width="12" height="9" rx="2" transform="rotate(90  120 64)"/>
+      <rect x="114" y="47"  width="12" height="9" rx="2" transform="rotate(135 120 64)"/>
+      <rect x="114" y="47"  width="12" height="9" rx="2" transform="rotate(180 120 64)"/>
+      <rect x="114" y="47"  width="12" height="9" rx="2" transform="rotate(225 120 64)"/>
+      <rect x="114" y="47"  width="12" height="9" rx="2" transform="rotate(270 120 64)"/>
+      <rect x="114" y="47"  width="12" height="9" rx="2" transform="rotate(315 120 64)"/>
+    </g>
+  </g>
+  <g class="g-tiny">
+    <circle cx="104" cy="148" r="10" fill="#0f0f22" stroke="#534AB7" stroke-width="1"/>
+    <circle cx="104" cy="148" r="3"  fill="#534AB7" opacity=".6"/>
+    <g fill="#1a1535" stroke="#534AB7" stroke-width=".9">
+      <rect x="99" y="136"  width="10" height="7" rx="1.5" transform="rotate(0   104 148)"/>
+      <rect x="99" y="136"  width="10" height="7" rx="1.5" transform="rotate(60  104 148)"/>
+      <rect x="99" y="136"  width="10" height="7" rx="1.5" transform="rotate(120 104 148)"/>
+      <rect x="99" y="136"  width="10" height="7" rx="1.5" transform="rotate(180 104 148)"/>
+      <rect x="99" y="136"  width="10" height="7" rx="1.5" transform="rotate(240 104 148)"/>
+      <rect x="99" y="136"  width="10" height="7" rx="1.5" transform="rotate(300 104 148)"/>
+    </g>
+  </g>
+  <line class="f1" x1="487" y1="54"  x2="548" y2="68"  stroke="#534AB7" stroke-width="1.1"/>
+  <line class="f2" x1="487" y1="54"  x2="548" y2="106" stroke="#534AB7" stroke-width=".7"/>
+  <line class="f3" x1="487" y1="88"  x2="548" y2="68"  stroke="#534AB7" stroke-width="1.3"/>
+  <line class="f4" x1="487" y1="88"  x2="548" y2="106" stroke="#534AB7" stroke-width="1.1"/>
+  <line class="f4" x1="487" y1="88"  x2="548" y2="144" stroke="#534AB7" stroke-width=".6"/>
+  <line class="f5" x1="487" y1="122" x2="548" y2="106" stroke="#534AB7" stroke-width="1.2"/>
+  <line class="f5" x1="487" y1="122" x2="548" y2="144" stroke="#534AB7" stroke-width="1.0"/>
+  <line class="f6" x1="487" y1="156" x2="548" y2="144" stroke="#534AB7" stroke-width="1.1"/>
+  <line class="f6" x1="487" y1="156" x2="548" y2="106" stroke="#534AB7" stroke-width=".5"/>
+  <line class="f7" x1="562" y1="68"  x2="623" y2="84"  stroke="#EF9F27" stroke-width="1.6"/>
+  <line class="f7" x1="562" y1="106" x2="623" y2="84"  stroke="#EF9F27" stroke-width="1.0"/>
+  <line class="f8" x1="562" y1="106" x2="623" y2="126" stroke="#EF9F27" stroke-width="1.3"/>
+  <line class="f8" x1="562" y1="144" x2="623" y2="126" stroke="#EF9F27" stroke-width="1.0"/>
+  <circle class="ni" cx="480" cy="54"  r="7" fill="#1a1535" stroke="#7F77DD" stroke-width="1.5"/>
+  <circle class="ni" cx="480" cy="88"  r="7" fill="#1a1535" stroke="#7F77DD" stroke-width="1.5"/>
+  <circle class="ni" cx="480" cy="122" r="7" fill="#1a1535" stroke="#7F77DD" stroke-width="1.5"/>
+  <circle class="ni" cx="480" cy="156" r="7" fill="#1a1535" stroke="#7F77DD" stroke-width="1.5"/>
+  <circle class="nh" cx="555" cy="68"  r="7" fill="#2a2060" stroke="#AFA9EC" stroke-width="1.5"/>
+  <circle class="nh" cx="555" cy="106" r="7" fill="#2a2060" stroke="#AFA9EC" stroke-width="1.5"/>
+  <circle class="nh" cx="555" cy="144" r="7" fill="#2a2060" stroke="#AFA9EC" stroke-width="1.5"/>
+  <circle class="no" cx="630" cy="84"  r="7" fill="#3a1d00" stroke="#EF9F27" stroke-width="1.8"/>
+  <circle class="no" cx="630" cy="126" r="7" fill="#3a1d00" stroke="#CF8820" stroke-width="1.5"/>
+  <text class="t1" x="158" y="82"  font-family="'Fira Code','Courier New',monospace" font-size="30" font-weight="700" fill="#EEEDFE" letter-spacing="-0.5">R. Ruthuraraj</text>
+  <text class="t2" x="160" y="110" font-family="'Fira Code','Courier New',monospace" font-size="13" fill="#AFA9EC" letter-spacing=".5">Mechanical Engineer  ·  AI Practitioner</text>
+  <text class="arr" x="160" y="136" font-family="'Fira Code','Courier New',monospace" font-size="11" fill="#6E40C9" letter-spacing=".3">⚙️  →  🤖</text>
+  <text class="t3" x="160" y="158" font-family="'Fira Code','Courier New',monospace" font-size="11.5" fill="#7F77DD" letter-spacing=".4">Agentic AI  ·  RAG  ·  Edge AI  ·  Multi-Agent Systems</text>
+  <rect x="0"   y="203" width="680" height="7"   rx="0" fill="#6E40C9" opacity=".12"/>
+  <rect x="158" y="205" width="140" height="2.5" rx="1.5" fill="#6E40C9" opacity=".6"/>
+</svg>

@@ -1,0 +1,41 @@
+<svg width="100%" viewBox="0 0 680 56" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Profile stats — 20+ projects, 3 workshops, 500+ learners, NPTEL, AICTE QIP</title>
+  <desc>A compact stat strip showing key profile highlights below the main banner.</desc>
+  <defs>
+    <style>
+      @keyframes fadein-up { from{opacity:0;transform:translateY(5px);} to{opacity:1;transform:translateY(0);} }
+      .s1{animation:fadein-up .5s ease-out .2s both;}
+      .s2{animation:fadein-up .5s ease-out .4s both;}
+      .s3{animation:fadein-up .5s ease-out .6s both;}
+      .s4{animation:fadein-up .5s ease-out .8s both;}
+      .s5{animation:fadein-up .5s ease-out 1.0s both;}
+    </style>
+  </defs>
+  <rect width="680" height="56" rx="10" fill="#0D0B1F"/>
+  <rect x="0" y="0" width="680" height="1.5" rx="0" fill="#6E40C9" opacity=".25"/>
+  <line x1="136" y1="12" x2="136" y2="44" stroke="#534AB7" stroke-width=".8" opacity=".4"/>
+  <line x1="272" y1="12" x2="272" y2="44" stroke="#534AB7" stroke-width=".8" opacity=".4"/>
+  <line x1="408" y1="12" x2="408" y2="44" stroke="#534AB7" stroke-width=".8" opacity=".4"/>
+  <line x1="544" y1="12" x2="544" y2="44" stroke="#534AB7" stroke-width=".8" opacity=".4"/>
+  <g class="s1" text-anchor="middle">
+    <text x="68" y="26" font-family="'Fira Code','Courier New',monospace" font-size="16" font-weight="700" fill="#EEEDFE">20+</text>
+    <text x="68" y="42" font-family="'Fira Code','Courier New',monospace" font-size="9.5" fill="#7F77DD" letter-spacing=".5">AI / ML Projects</text>
+  </g>
+  <g class="s2" text-anchor="middle">
+    <text x="204" y="26" font-family="'Fira Code','Courier New',monospace" font-size="16" font-weight="700" fill="#EEEDFE">3</text>
+    <text x="204" y="42" font-family="'Fira Code','Courier New',monospace" font-size="9.5" fill="#7F77DD" letter-spacing=".5">AI Workshops</text>
+  </g>
+  <g class="s3" text-anchor="middle">
+    <text x="340" y="26" font-family="'Fira Code','Courier New',monospace" font-size="16" font-weight="700" fill="#EF9F27">200+</text>
+    <text x="340" y="42" font-family="'Fira Code','Courier New',monospace" font-size="9.5" fill="#7F77DD" letter-spacing=".5">Learners Trained</text>
+  </g>
+  <g class="s4" text-anchor="middle">
+    <text x="476" y="26" font-family="'Fira Code','Courier New',monospace" font-size="13" font-weight="700" fill="#AFA9EC">NPTEL</text>
+    <text x="476" y="42" font-family="'Fira Code','Courier New',monospace" font-size="9.5" fill="#7F77DD" letter-spacing=".5">ML · DL · AI</text>
+  </g>
+  <g class="s5" text-anchor="middle">
+    <text x="612" y="26" font-family="'Fira Code','Courier New',monospace" font-size="11" font-weight="700" fill="#AFA9EC">AICTE QIP</text>
+    <text x="612" y="42" font-family="'Fira Code','Courier New',monospace" font-size="9.5" fill="#7F77DD" letter-spacing=".5">IIIT Allahabad</text>
+  </g>
+  <rect x="0" y="53" width="680" height="2" rx="1" fill="#6E40C9" opacity=".2"/>
+</svg>
