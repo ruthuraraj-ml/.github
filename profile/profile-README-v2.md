@@ -1,6 +1,6 @@
 <div align="center">
 
-![banner](https://raw.githubusercontent.com/ruthuraraj-ml/ruthuraraj-ml/main/banner.svg)
+![banner](https://github.com/ruthuraraj-ml/.github/blob/main/profile/banner.svg)
 
 ![stats](https://raw.githubusercontent.com/ruthuraraj-ml/ruthuraraj-ml/main/stat-strip.svg)
 
