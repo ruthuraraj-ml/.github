@@ -162,6 +162,50 @@ Distributional hypothesis · negative sampling · cosine similarity · semantic 
 ---
 <!--  ═══════════════════════════════════════════════════════════ -->
 <div align="center">
+<img src="https://img.shields.io/badge/──────────%20🦙%20%20LLM%20FINE--TUNING%20%26%20PEFT%20%20🦙%20──────────-0d1117?style=for-the-badge&labelColor=0d1117&color=8b5cf6"/>
+</div>
+
+*Transformers · LoRA · QLoRA · Quantization · Instruction Tuning*
+
+---
+### 🔹 [Parameter-Efficient Fine-Tuning of BERT and Gemma using LoRA & QLoRA](https://github.com/ruthuraraj-ml/Parameter-Efficient-Fine-Tuning-BERT-and-Gemma-using-LoRA-and-QLoRA)
+
+![Type](https://img.shields.io/badge/Type-PEFT%20%7C%20LoRA%20%7C%20QLoRA-8b5cf6?style=flat-square\&labelColor=4c1d95)
+![Models](https://img.shields.io/badge/Models-BERT%20Base%20%7C%20Gemma%202B-yellow?style=flat-square)
+![Focus](https://img.shields.io/badge/Focus-Instruction%20Tuning%20%7C%20Quantization-success?style=flat-square)
+
+A hands-on exploration of **Parameter-Efficient Fine-Tuning (PEFT)**, progressing from LoRA-based adaptation of **BERT** to QLoRA-based instruction tuning of **Gemma 2B**. The project investigates how large language models can be adapted by training only a tiny fraction of their parameters while significantly reducing memory requirements through 4-bit quantization.
+
+**What makes this different:** the repository documents the complete engineering journey — including an attempted QLoRA implementation on BERT, debugging of bitsandbytes compatibility issues, architectural analysis of encoder vs decoder models, and a successful migration to Gemma 2B. Rather than hiding failed experiments, the project preserves them as learning artifacts.
+
+<details>
+<summary><b>Architecture, results & concepts covered</b></summary>
+
+**BERT + LoRA**
+
+* Accuracy: 90.41%
+* Trainable Parameters: 591K (0.5372%)
+
+**Gemma 2B + QLoRA**
+
+* Accuracy: 97.04%*
+* Trainable Parameters: 6.39M (0.2438%)
+* 4-bit NF4 Quantization
+* Fine-tuned on a Tesla T4 GPU
+
+**Concepts Covered**
+
+Parameter-Efficient Fine-Tuning · LoRA · QLoRA · 4-bit Quantization · Instruction Tuning · Transformer Architectures · Encoder vs Decoder Models · Hugging Face PEFT · BitsAndBytes · Memory-Efficient LLM Adaptation
+
+`BERT` `Gemma 2B` `LoRA` `QLoRA` `PEFT` `BitsAndBytes` `Transformers` `PyTorch` `Hugging Face`
+
+* Metrics computed on valid generated predictions that could be confidently mapped to sentiment labels.
+
+</details>
+
+---
+<!--  ═══════════════════════════════════════════════════════════ -->
+<div align="center">
 <img src="https://img.shields.io/badge/─────────────%20%F0%9F%A4%96%20%20AGENTIC%20AI%20%26%20LLM%20SYSTEMS%20%20%F0%9F%A4%96%20─────────────-0d1117?style=for-the-badge&labelColor=0d1117&color=1a6e3c"/>
 </div>
 
