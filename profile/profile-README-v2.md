@@ -2,7 +2,7 @@
 
 ![banner](https://github.com/ruthuraraj-ml/.github/blob/main/profile/banner.svg)
 
-![stats](https://raw.githubusercontent.com/ruthuraraj-ml/ruthuraraj-ml/main/stat-strip.svg)
+![stats](https://github.com/ruthuraraj-ml/.github/blob/main/profile/stat-strip.svg)
 
 <br/>
 
