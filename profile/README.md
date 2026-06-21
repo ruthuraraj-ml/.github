@@ -31,44 +31,74 @@ This matters especially coming from a Mechanical Engineering background: the ins
 
 ### [R-B.A.T — RAG-Based Academic Tutor](https://github.com/ruthuraraj-ml/R-BAT-Academic-Tutor)
 
-![Type](https://img.shields.io/badge/Type-RAG%20%7C%20Agentic%20AI%20%7C%20Educational%20AI-blueviolet?style=flat-square)
-![LLM](https://img.shields.io/badge/LLM-Gemma3%3A4b%20%7C%20Mistral%20(Ollama)-yellow?style=flat-square)
+![Type](https://img.shields.io/badge/Type-RAG%20%7C%20Educational%20AI%20%7C%20Agentic%20Workflows-blueviolet?style=flat-square)
+![LLM](https://img.shields.io/badge/LLM-Gemma3%3A4b%20%7C%20Mistral%20\(Ollama\)-yellow?style=flat-square)
 ![Infra](https://img.shields.io/badge/Infra-Fully%20Local%20%7C%20CPU%20Only-success?style=flat-square)
 ![Repo](https://img.shields.io/badge/Repo-Private%20%7C%20Demo%20on%20Request-red?style=flat-square)
 
-A **fully local, RAG-grounded academic AI system** built for SNS College of Technology — running on CPU with no GPU, no cloud API costs, and no data leaving the institution.
+R-B.A.T (**RAG-Based Academic Tutor & Assessment Console**) is my long-term effort to build an institution-ready academic AI system that goes beyond chatbot-style interactions.
 
-Four purpose-built modes: **Tutor** (RAG Q&A over course PDFs) · **Assessment** (Bloom's Taxonomy-aligned question paper generation with CO mapping) · **Evaluation** (model answer generation grounded in course corpus) · **Presentation** (PPT pipeline with 6 themes × 6 rotating content templates).
+The project explores how Retrieval-Augmented Generation, local LLMs, structured workflows, and educational guardrails can be combined to support the complete teaching-learning cycle—from content delivery and student tutoring to assessment creation and academic resource generation.
 
-**What makes this different:** every mode is a structurally distinct pipeline, not a single chatbot doing everything loosely. Real constraints — no GPU, no API budget, institutional data privacy — are treated as design parameters, not obstacles.
+Designed around real institutional constraints such as data privacy, limited hardware, and zero cloud dependency, the entire system runs locally using open-source models through Ollama.
 
-<details>
-<summary><b>Architecture & technical details</b></summary>
+### Core Capabilities
 
+🎓 **Tutor Mode**
+Grounded question answering over prescribed textbooks with syllabus-aware retrieval, diagram support, and multiple explanation styles.
+
+📝 **Assessment Mode**
+Automatic generation of Internal and Semester Examination question papers with Bloom's Taxonomy alignment, CO mapping, and institutional formatting.
+
+📖 **Evaluation Mode**
+Generation of textbook-grounded model answers and marking schemes for faculty reference and student preparation.
+
+📊 **Presentation Mode**
+Automated lecture presentation generation using RAG-derived content, diagrams, flowcharts, and customizable academic themes.
+
+<details>  
+  
+### Why It Matters
+
+Most educational AI tools focus on answering questions.
+
+R-B.A.T focuses on generating academically useful artifacts:
+
+* Question Papers
+* Model Answers
+* Lecture Presentations
+* Tutor Responses
+* Diagram-Based Explanations
+
+all grounded in institution-approved learning resources rather than general web knowledge.
+
+<summary><b>Architecture & Technical Details</b></summary>
+
+```text
+                    R-B.A.T
+         Academic Co-Pilot for Teaching
+
+┌────────────┬────────────┬────────────┬────────────┐
+│   Tutor    │ Assessment │ Evaluation │Presentation│
+└─────┬──────┴─────┬──────┴─────┬──────┴─────┬──────┘
+      │            │            │            │
+      └────────────┴────────────┴────────────┘
+                       │
+             Academic Knowledge Layer
+      (Textbooks • Syllabus • Diagrams • COs)
+                       │
+                Retrieval Engine
+                 (FAISS + ST)
+                       │
+                Local LLM Runtime
+            (Gemma • Mistral • Ollama)
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    Streamlit Frontend                    │
-│         Midnight Ember UI (Lora + Plus Jakarta Sans)     │
-└────────────┬───────────────────────────────┬────────────┘
-             │                               │
-    ┌────────▼────────┐             ┌────────▼────────┐
-    │   RAG Pipeline  │             │  PPT Pipeline   │
-    │  (FAISS Index)  │             │  ppt_engine.py  │
-    │  Course PDFs    │             │  6 Themes × 6   │
-    │  + Syllabus     │             │  Templates      │
-    └────────┬────────┘             └────────┬────────┘
-             │                               │
-    ┌────────▼───────────────────────────────▼────────┐
-    │              Local LLM Layer (Ollama)            │
-    │   Gemma3:4b — Tutor, Assessment, Evaluation      │
-    │   Mistral   — Presentation synthesis             │
-    │         CPU-only · No GPU Required               │
-    └─────────────────────────────────────────────────┘
-```
 
-`Gemma3:4b` `Mistral` `Ollama` `FAISS` `SentenceTransformers` `Streamlit` `ReportLab` `python-pptx`
+`Gemma` `Mistral` `Ollama` `FAISS` `SentenceTransformers` `Streamlit` `ReportLab` `python-pptx`
 
 </details>
+
+*Current focus: evolving R-B.A.T from a textbook-grounded tutor into a comprehensive academic co-pilot for teaching, assessment, and classroom content generation.*
 
 ---
 
@@ -143,9 +173,16 @@ A concept-driven demonstration of **why linear models fail and why hidden layers
 
 ---
 
-### 🔤 Embeddings & Representation Learning
+<!--  ═══════════════════════════════════════════════════════════ -->
+<div align="center">
+<img src="https://img.shields.io/badge/──────────%20🧩%20%20NLP%20%26%20LLM%20FOUNDATIONS%20%20🧩%20──────────-0d1117?style=for-the-badge&labelColor=0d1117&color=8b5cf6"/>
+</div>
 
-### [Word2Vec Embedding Explorer](https://github.com/ruthuraraj-ml/Embedding_Search) · [🌐 Live Demo](https://ruthuraraj-ml.github.io/Embedding_Search/)
+*Tokenization · Embeddings · Transformers · LoRA · QLoRA*
+
+---
+
+### 🔤 [Word2Vec Embedding Explorer](https://github.com/ruthuraraj-ml/Embedding_Search) · [🌐 Live Demo](https://ruthuraraj-ml.github.io/Embedding_Search/)
 ![Type](https://img.shields.io/badge/Type-Representation%20Learning-7F77DD?style=flat-square) ![Framework](https://img.shields.io/badge/Framework-PyTorch-red?style=flat-square)
 
 End-to-end Word2Vec (Skip-Gram + Negative Sampling) built from scratch in PyTorch, extended into an **interactive browser-based embedding explorer**. Exports intermediate checkpoints across epochs and visualises how semantic structure gradually emerges from random vectors — nearest neighbours, similarity scoring, analogy solving, geometric clustering.
@@ -160,12 +197,20 @@ Distributional hypothesis · negative sampling · cosine similarity · semantic 
 </details>
 
 ---
-<!--  ═══════════════════════════════════════════════════════════ -->
-<div align="center">
-<img src="https://img.shields.io/badge/──────────%20🦙%20%20LLM%20FINE--TUNING%20%26%20PEFT%20%20🦙%20──────────-0d1117?style=for-the-badge&labelColor=0d1117&color=8b5cf6"/>
-</div>
 
-*Transformers · LoRA · QLoRA · Quantization · Instruction Tuning*
+### 🧩  [Building a Custom BPE Tokenizer with WikiText-2](https://github.com/ruthuraraj-ml/Building-a-Custom-BPE-Tokenizer-with-WikiText-2) · [🌐 Live Demo](https://ruthuraraj-ml.github.io/Building-a-Custom-BPE-Tokenizer-with-WikiText-2/)
+![Type](https://img.shields.io/badge/Type-Tokenization%20%26%20Subword%20Learning-7F77DD?style=flat-square) ![Framework](https://img.shields.io/badge/Framework-HuggingFace%20Tokenizers-yellow?style=flat-square)
+
+Built a custom **Byte Pair Encoding (BPE) tokenizer** from scratch using the WikiText-2 corpus and extended it into an **interactive browser-based tokenizer visualizer**. The project explores corpus cleaning, vocabulary learning, subword formation, rare-word decomposition, compression efficiency, and tokenizer evaluation while demonstrating how modern NLP systems represent language through reusable subword units.
+
+<details>
+<summary><b>Concepts covered</b></summary>
+
+Byte Pair Encoding (BPE) · subword tokenization · vocabulary construction · corpus preprocessing · tokenization consistency · compression ratio · out-of-vocabulary handling · rare-word decomposition · tokenizer evaluation · Hugging Face Tokenizers
+
+`BPE` `Tokenization` `Subword Learning` `Vocabulary Analysis` `WikiText-2` `HuggingFace Tokenizers`
+
+</details>
 
 ---
 ### 🔹 [Parameter-Efficient Fine-Tuning of BERT and Gemma using LoRA & QLoRA](https://github.com/ruthuraraj-ml/Parameter-Efficient-Fine-Tuning-BERT-and-Gemma-using-LoRA-and-QLoRA)
@@ -357,94 +402,115 @@ Caption generation progressing from CNN–LSTM baseline (InceptionV3 + LSTM) thr
 
 ## 🛠️ Technology Stack
 
+### 💻 Languages
 
-**Languages**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square\&logo=python\&logoColor=white)
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-**ML & Data Science**
+### 📊 Machine Learning & Data Science
 
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-189AB4?style=flat-square&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square\&logo=scikit-learn\&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-189AB4?style=flat-square\&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square\&logo=numpy\&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square\&logo=pandas\&logoColor=white)
 
-**Deep Learning**
 
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21F?style=flat-square&logo=huggingface&logoColor=black)
+### 🧠 Deep Learning & NLP
 
-**Agentic AI & Orchestration**
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square\&logo=pytorch\&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square\&logo=tensorflow\&logoColor=white)
+![Transformers](https://img.shields.io/badge/Transformers-FFCC00?style=flat-square)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21F?style=flat-square\&logo=huggingface\&logoColor=black)
+![Tokenizers](https://img.shields.io/badge/Tokenizers-7C3AED?style=flat-square)
 
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![CrewAI](https://img.shields.io/badge/CrewAI-6E40C9?style=flat-square&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-2C2C2C?style=flat-square&logoColor=white)
 
-**LLMs & APIs**
+### 🚀 LLMs & Parameter-Efficient Fine-Tuning
 
-![Gemini](https://img.shields.io/badge/Gemini-4285F4?style=flat-square&logo=google&logoColor=white)
-![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logoColor=white)
+![LoRA](https://img.shields.io/badge/LoRA-8B5CF6?style=flat-square)
+![QLoRA](https://img.shields.io/badge/QLoRA-7C3AED?style=flat-square)
+![PEFT](https://img.shields.io/badge/PEFT-6D28D9?style=flat-square)
+![BitsAndBytes](https://img.shields.io/badge/BitsAndBytes-F59E0B?style=flat-square)
 
-**RAG & Vector DBs**
 
-![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B35?style=flat-square&logoColor=white)
+### 🤖 Agentic AI & Orchestration
 
-**Frontend & Apps**
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square\&logo=langchain\&logoColor=white)
+![CrewAI](https://img.shields.io/badge/CrewAI-6E40C9?style=flat-square)
+![LangGraph](https://img.shields.io/badge/LangGraph-2C2C2C?style=flat-square)
 
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![Gradio](https://img.shields.io/badge/Gradio-F97316?style=flat-square&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
-**Dev Tools**
+### 🔎 RAG & Vector Databases
 
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat-square)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B35?style=flat-square)
+![RAG](https://img.shields.io/badge/RAG-0EA5E9?style=flat-square)
+![GraphRAG](https://img.shields.io/badge/GraphRAG-2563EB?style=flat-square)
 
+
+### ⚡ LLM Providers & Local AI
+
+![Gemini](https://img.shields.io/badge/Gemini-4285F4?style=flat-square\&logo=google\&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square)
+
+
+### 🌐 Applications & Deployment
+
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square\&logo=streamlit\&logoColor=white)
+![Gradio](https://img.shields.io/badge/Gradio-F97316?style=flat-square)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=flat-square\&logo=githubpages\&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square\&logo=jupyter\&logoColor=white)
+
+
+### 🛠️ Developer Tools
+
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square\&logo=git\&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square\&logo=github\&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square\&logo=visualstudiocode\&logoColor=white)
 
 ---
 
 ## 🎯 Current Focus
 
-- Applying AI to **engineering, manufacturing, and supply chain optimization**
-- Creating **AI workshops and hands-on learning experiences** for students and faculty
-- Expanding **multimodal and agentic RAG systems** for research and education
-- Evaluating **local and hybrid LLM deployments** (Gemma, Ollama) for cost-efficient agentic systems
-- Designing **multi-LLM architectures** that assign specialized models to different reasoning workloads
+* Building **LLM foundations and applied NLP systems**, from tokenization and embeddings to parameter-efficient fine-tuning
+* Developing **RAG, GraphRAG, and agentic AI applications** for education, research, and decision support
+* Applying AI to **engineering, manufacturing, logistics, and supply chain optimization**
+* Creating **interactive AI learning experiences, workshops, and educational tools** for students and faculty
+* Exploring **local and hybrid LLM deployments** (Gemma, Ollama, Groq, Gemini) for scalable and cost-efficient AI systems
+* Designing **multi-agent and multi-LLM architectures** that combine specialized models, tools, and retrieval workflows
 
 ---
 
 ## 🔬 R&D Roadmap
 
 <details>
-<summary><b>Agentic AI, Generative AI & Engineering AI roadmap</b></summary>
+<summary><b>Agentic AI, LLM Systems & Engineering AI</b></summary>
 
-### 🤖 Agentic AI & Decision Intelligence
+### 🤖 Agentic AI & Knowledge Systems
 
-* **Enterprise Logistics Hub v2** — Local LLM deployment, advanced telemetry, multi-product optimization, autonomous strategy monitoring
-* **Competitor Intelligence Agent v2** — Multi-location comparative analysis, geospatial mapping, longitudinal market memory
-* **RAG Learning Management System** — Course-aware note generation, semantic search, question-bank creation, instructor-facing automation
-* **Paperwise RAG v2** — Local LLM support (Gemma via Ollama), cross-paper comparison, citation-aware synthesis
+* **Enterprise AI Agents** — Multi-agent systems for logistics, decision support, and operational intelligence
+* **GraphRAG & Memory-Aware Agents** — Knowledge graphs, long-term memory, and reasoning-enhanced retrieval
+* **Educational AI Systems** — Next-generation RAG tutors, assessment assistants, and learning copilots
 
-### 🧠 Generative AI & LLM Applications
+### 🧠 LLMs & Generative AI
 
-* **VAE for Tabular Data** — Synthetic dataset generation for structured manufacturing datasets
-* **Real-ESRGAN Extension** — Domain-specific fine-tuning for engineering imagery
+* **LLM Fine-Tuning & PEFT** — LoRA, QLoRA, instruction tuning, and domain adaptation
+* **Multimodal AI Applications** — Text, image, and document understanding workflows
+* **Local AI Infrastructure** — Hybrid deployments using Ollama, Gemma, and open-source LLMs
 
-### ⚙️ AI for Mechanical & Manufacturing Engineering
+### ⚙️ AI for Engineering & Manufacturing
 
-* **Surface Roughness Prediction** — ML/DL models for machining quality from cutting parameters
-* **Nano-Additive Bio-Lubricant Modelling** — Tribological performance prediction and eco-lubricant optimization
-* **Manufacturing Knowledge Systems** — Agentic assistants and RAG pipelines for engineering education
+* **Predictive Manufacturing** — Quality, tool wear, and process optimization using ML/DL
+* **Engineering Knowledge Systems** — AI assistants and retrieval systems for technical education
+* **Decision Intelligence for Supply Chains** — Optimization, forecasting, and autonomous planning
 
-> **Research direction:** Building interpretable, memory-aware AI systems that bridge modern agentic intelligence with real-world engineering decision-making.
+> **Research Direction:** Building interpretable, retrieval-augmented, and memory-aware AI systems that bridge modern LLMs with real-world engineering and educational applications.
 
 </details>
 
 ---
+
 
 ## 👨‍🏫 About
 
@@ -455,13 +521,13 @@ This portfolio documents a **self-directed learning journey** from classical mac
 
 What began as an effort to learn Python for teaching and engineering applications gradually evolved into a deeper exploration of how intelligent systems reason, retrieve information, collaborate, critique their own outputs, and learn from past decisions. Every project in this portfolio represents not only a completed system, but also the questions, experiments, debugging sessions, architectural redesigns, and lessons learned along the way.
 
-My long-term goal is to bridge **Artificial Intelligence and Engineering**, applying machine learning, generative AI, and agentic systems to manufacturing, supply chain optimization, engineering education, and real-world decision support. This portfolio serves as both a record of that journey and a collection of practical AI systems built through continuous learning and experimentation.
+My long-term goal is to bridge Artificial Intelligence and Engineering, applying machine learning, NLP, generative AI, and agentic systems to manufacturing, engineering education, and real-world decision support. This portfolio showcases that journey through practical AI systems, continuous learning and experimentation.
 
 ---
 
 ## 🙏 Acknowledgements
 
-SNS College of Technology · AICTE QIP Programme · NPTEL Course Instructors · Kaggle · UCI · Hugging Face · CrewAI · LangGraph · LangChain · PyTorch · TensorFlow · Open-Source AI Communities
+SNS College of Technology · AICTE QIP Programme · IIIT Allahabad . NPTEL Course Instructors · Kaggle · UCI · Hugging Face · CrewAI · LangGraph · LangChain · PyTorch · TensorFlow · Open-Source AI Communities
 
 ---
 
