@@ -258,7 +258,57 @@ Parameter-Efficient Fine-Tuning · LoRA · QLoRA · 4-bit Quantization · Instru
 
 ---
 
-### 🔹 [Enterprise Logistics Orchestration Hub](https://github.com/ruthuraraj-ml/enterprise-logistics-orchestration-hub) ⭐ *Latest*
+### 🔹 [D.A.R.I.A. — Domain-Specific Agentic Research, Intelligence & Analysis System](https://github.com/ruthuraraj-ml/D.A.R.I.A.---Domain-Specific-Agentic-Research-Intelligence-and-Analysis-System) ⭐ *Featured*
+
+![Type](https://img.shields.io/badge/Type-LangGraph%20%7C%20Agentic%20Research%20System-1a6e3c?style=flat-square\&labelColor=0a3d1f)
+![Retrieval](https://img.shields.io/badge/Retrieval-Hybrid%20RAG%20%2B%20Web-blue?style=flat-square)
+![Memory](https://img.shields.io/badge/Memory-Persistent%20Research%20Memory-blueviolet?style=flat-square)
+
+A **memory-driven multi-agent research system** that transforms a user query into an evidence-backed research report through planning, retrieval, critique, reflection, and persistent learning. Built with LangGraph, D.A.R.I.A. combines domain-specific RAG, web research, evidence curation, a dedicated Research Critic, and structured summarization to move beyond traditional one-shot question answering.
+
+**What makes this different:** retrieved evidence is independently evaluated by a Research Critic that identifies missing concepts, generates improvement feedback, and triggers replanning when research quality is insufficient. Research plans, information gaps, critic feedback, and final reports are stored as persistent memory and reused in future investigations.
+
+<details>
+<summary><b>Architecture, agent workflow & concepts covered</b></summary>
+
+Multi-agent workflow:
+
+**Memory Agent → Information Needs Analyst → RAG/Web Retrieval → Evidence Curator → Research Critic → Reflection Loop → Summarizer → Memory Update**
+
+<p align="center">
+  <img src="images/daria_langgraph_workflow.png" width="100%">
+</p>
+
+<p align="center">
+  <em>LangGraph workflow showing conditional routing, parallel hybrid retrieval, reflection-driven replanning, and persistent memory integration.</em>
+</p>
+
+### Core Capabilities
+
+* Memory-Augmented Research
+* Information Gap Analysis
+* Dynamic Route Selection
+* Domain-Specific RAG
+* Web Research
+* Parallel Hybrid Retrieval
+* Evidence Curation
+* Critique-Based Evaluation
+* Reflection Loops
+* Persistent Learning
+* Structured Report Generation
+* DOCX Export
+
+### Concepts Covered
+
+LangGraph StateGraph · shared state management · conditional routing · parallel execution · hybrid retrieval · persistent memory · research planning · information gap analysis · evidence curation · reflection loops · critique-driven evaluation · structured summarization · explainable AI workflows
+
+`LangGraph` `LiteLLM` `Gemini 2.5 Flash` `ChromaDB` `SentenceTransformers` `Docling` `Tavily` `Pydantic` `Streamlit` `python-docx`
+
+</details>
+
+---
+
+### 🔹 [Enterprise Logistics Orchestration Hub](https://github.com/ruthuraraj-ml/enterprise-logistics-orchestration-hub) ⭐ *Featured*
 
 ![Type](https://img.shields.io/badge/Type-CrewAI%20Flows%20%7C%20Decision%20Intelligence-1a6e3c?style=flat-square&labelColor=0a3d1f)
 ![LLM](https://img.shields.io/badge/LLM-Llama%203.3%20%7C%20Gemma%204%20%7C%20Gemini-yellow?style=flat-square)
