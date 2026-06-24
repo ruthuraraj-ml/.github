@@ -75,7 +75,7 @@ all grounded in institution-approved learning resources rather than general web 
 <summary><b>Architecture & Technical Details</b></summary>
 
 <p align="center">
-  <img src="images/daria_langgraph_workflow.png" width="100%">
+  <img src="images/r-b.a.t_architecture.png" width="100%">
 </p>
 
 <p align="center">
