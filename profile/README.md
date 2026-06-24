@@ -74,25 +74,13 @@ all grounded in institution-approved learning resources rather than general web 
 
 <summary><b>Architecture & Technical Details</b></summary>
 
-```text
-                    R-B.A.T
-         Academic Co-Pilot for Teaching
+<p align="center">
+  <img src="images/daria_langgraph_workflow.png" width="100%">
+</p>
 
-┌────────────┬────────────┬────────────┬────────────┐
-│   Tutor    │ Assessment │ Evaluation │Presentation│
-└─────┬──────┴─────┬──────┴─────┬──────┴─────┬──────┘
-      │            │            │            │
-      └────────────┴────────────┴────────────┘
-                       │
-             Academic Knowledge Layer
-      (Textbooks • Syllabus • Diagrams • COs)
-                       │
-                Retrieval Engine
-                 (FAISS + ST)
-                       │
-                Local LLM Runtime
-            (Gemma • Mistral • Ollama)
-```
+<p align="center">
+  <em>High-level architecture of R-B.A.T, illustrating the interaction between academic workflows (Tutor, Assessment, Evaluation, and Presentation), the Academic Knowledge Layer, Retrieval Engine, Local LLM Runtime, and structured output generation.</em>
+</p>
 
 `Gemma` `Mistral` `Ollama` `FAISS` `SentenceTransformers` `Streamlit` `ReportLab` `python-pptx`
 
