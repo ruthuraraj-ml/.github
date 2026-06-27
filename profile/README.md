@@ -337,7 +337,7 @@ Multi-agent workflow:
 **Bill Processing → Expense Analytics → Recurring Expense Detection → Spending Forecast → Financial Advisor → Financial Reviewer → Verified Consultation → Response Synthesis**
 
 <p align="center">
-  <img src="images/architecture.png" width="100%">
+  <img src="images/fin_platform_architecture.png" width="100%">
 </p>
 
 <p align="center">
