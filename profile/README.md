@@ -308,8 +308,14 @@ A **CrewAI Flow-powered logistics decision intelligence platform** that transfor
 
 <details>
 <summary><b>Architecture, multi-LLM design & concepts covered</b></summary>
+  
+<p align="center">
+  <img src="images/logistic_architecture.png" width="100%">
+</p>
 
-Multi-LLM cognitive architecture: Llama 3.3 70B for inventory interpretation · Gemma 4 26B for logistics analysis · Gemma 4 31B for strategic synthesis · Gemini Flash Lite for independent validation.
+<p align="center">
+  <em>Multi-LLM cognitive architecture: Llama 3.3 70B for inventory interpretation · Gemma 4 26B for logistics analysis · Gemma 4 31B for strategic synthesis · Gemini Flash Lite for independent validation.</em>
+</p>
 
 **Concepts covered:** CrewAI Flows · multi-agent orchestration · multi-LLM specialization · reflection-driven strategy revision · persistent SQLite memory · delta reasoning · parallel execution branches · synchronization barriers · executive decision support · logistics optimization · geospatial analytics
 
