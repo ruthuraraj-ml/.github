@@ -319,6 +319,53 @@ Multi-LLM cognitive architecture: Llama 3.3 70B for inventory interpretation · 
 
 ---
 
+### 🔹 [Financial Intelligence Platform](https://github.com/ruthuraraj-ml/Financial-Intelligence-Platform) ⭐ *Featured*
+
+![Type](https://img.shields.io/badge/Type-AutoGen%20AgentChat%20%7C%20Financial%20Intelligence-1a6e3c?style=flat-square\&labelColor=0a3d1f)
+![Collaboration](https://img.shields.io/badge/Collaboration-Advisor%20%E2%86%94%20Reviewer-blue?style=flat-square)
+![Reasoning](https://img.shields.io/badge/Reasoning-Deterministic%20Analytics%20%2B%20Multi--Agent-blueviolet?style=flat-square)
+
+A **multi-agent financial intelligence platform** that transforms bill images into actionable financial insights through deterministic analytics, expense forecasting, and collaborative AI reasoning. Built with AutoGen AgentChat, the system combines OCR, spending analytics, recurring expense detection, and a dedicated Advisor–Reviewer collaboration workflow to produce explainable, verified financial recommendations.
+
+**What makes this different:** deterministic financial analytics are deliberately separated from LLM reasoning. Structured financial reports are generated first, then independently reviewed by a Financial Reviewer before the Financial Advisor produces the final verified consultation. Every recommendation is supported by structured analytics and accompanied by an explainable consultation trace.
+
+<details>
+<summary><b>Architecture, multi-agent workflow & concepts covered</b></summary>
+
+Multi-agent workflow:
+
+**Bill Processing → Expense Analytics → Recurring Expense Detection → Spending Forecast → Financial Advisor → Financial Reviewer → Verified Consultation → Response Synthesis**
+
+<p align="center">
+  <img src="images/architecture.png" width="100%">
+</p>
+
+<p align="center">
+  <em>Production-style architecture combining deterministic financial analytics with AutoGen-based collaborative reasoning and structured response synthesis.</em>
+</p>
+
+### Core Capabilities
+
+* OCR Bill Processing
+* Expense Categorization
+* Spending Analytics
+* Recurring Expense Detection
+* Monthly Spending Forecasting
+* Advisor–Reviewer Collaboration
+* Structured Financial Consultation
+* Reflection-Based Explainability
+* Interactive Financial Dashboard
+
+### Concepts Covered
+
+AutoGen AgentChat · planner–executor architecture · group chat collaboration · deterministic analytics · structured financial reasoning · advisor–reviewer verification · Pydantic validation · modular coordinator design · response serialization · explainable AI workflows
+
+`AutoGen AgentChat` `Gemini` `Groq` `Streamlit` `EasyOCR` `Pandas` `Plotly` `Pydantic`
+
+</details>
+
+---
+
 ### 🔹 [Stateful Market Intelligence Agent](https://github.com/ruthuraraj-ml/stateful-market-intelligence-agent)
 
 ![Type](https://img.shields.io/badge/Type-ReAct%20%7C%20LangGraph%20%7C%20RAG-1a6e3c?style=flat-square&labelColor=0a3d1f)
